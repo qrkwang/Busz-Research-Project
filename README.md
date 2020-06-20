@@ -4,22 +4,21 @@ Our Project Timeline – Timeline.xlsx
 
 Summarized Tasks on hand:
 
-Learn React & Make UI Frame
+1)Learn React & Make UI Frame
 
-Learn Flask + do up UI in flask + Apply Google for data cleanup completion
+2)Learn Flask + do up UI in flask + Apply Google for data cleanup completion
 
-Connect DB, App backend functions,  fetch data
+3)Connect DB, App backend functions,  fetch data
 
-Connect DB, Web backend functions,  fetch data
+4)Connect DB, Web backend functions,  fetch data
 
 
 Future:
+1)Testing & Review
 
-Testing & Review
+2)Changes 
 
-Changes 
+3)Final Review and Changes
 
-Final Review and Changes
-
-Future Implementations
+4)Future Implementations
 
