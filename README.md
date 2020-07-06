@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #MyBusz Project
 
 Our Project Timeline – Timeline.xlsx 
@@ -23,3 +24,6 @@ Future:
 
 4)Future Implementations
 
+=======
+# busz
+>>>>>>> 30777e2... Initial commit
