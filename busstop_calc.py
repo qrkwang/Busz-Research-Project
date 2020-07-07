@@ -78,6 +78,7 @@ with open('output/test-output-sample_2.csv' , mode='r' ,newline='') as input ,  
         
         coordinate1 = row['Lat_A'] + ',' + row['Lng_A']
         coordinate2 = row['Lat_B'] + ',' + row['Lng_B']
+        
         #parameters to pass the the Web URL
         my_dictionary = {'busserviceno':7, 'routeno':row['Route'], 'arg1':coordinate1, 'arg2':coordinate2}
         
