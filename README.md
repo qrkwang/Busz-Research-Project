@@ -13,7 +13,7 @@ Order to execute
 4) calculate_actual_duration.py
     To calcualte the actual duration of the bus travelling time
     Factor that have been calculated
-        - Finding the distance between 2 point using the testKM API
+        <br>- Finding the distance between 2 point using the testKM API
         - Finding the speed of the point using distance/duration
         - Finding the actual distance of the actual busstop location
         - Finding the actual duration taken using the "actual_distance / speed"
