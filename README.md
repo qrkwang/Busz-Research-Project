@@ -1,16 +1,16 @@
 <h1>#MyBusz Project</h1>
 
-<h1>Order to execute<h1>
-1) <h1>readInput.py</h1> 
+<h2>Order to execute<h2>
+1) <b>readInput.py</b> 
     <br>To calculate the geolocation of the address returning us the lat and lon
 
-2) <h1>retrieve_NearestBS.py</h1>
+2) <b>retrieve_NearestBS.py</b>
     <br>To find the nearest busstop of each location
 
-3) <h1>calculate_duration.py</h1>
+3) <b>calculate_duration.py</b>
     <br>To calculate the duration of the bus travelling from one point to the other point
 
-4) <h1>calculate_actual_duration.py</h1>
+4) <b>calculate_actual_duration.py</b>
     To calcualte the actual duration of the bus travelling time
     Factor that have been calculated
         <br>- Finding the distance between 2 point using the testKM API
