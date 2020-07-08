@@ -1,29 +1,19 @@
-<<<<<<< HEAD
 #MyBusz Project
 
-Our Project Timeline – Timeline.xlsx 
+Order to execute
+1) readInput.py 
+    To calculate the geolocation of the address returning us the lat and lon
 
-Summarized Tasks on hand:
+2) retrieve_NearestBS.py
+    To find the nearest busstop of each location
 
-1)Learn React & Make UI Frame
+3) calculate_duration.py
+    To calculate the duration of the bus travelling from one point to the other point
 
-2)Learn Flask + do up UI in flask + Apply Google for data cleanup completion
-
-3)Connect DB, App backend functions,  fetch data
-
-4)Connect DB, Web backend functions,  fetch data
-
-
-Future:
-
-1)Testing & Review
-
-2)Changes 
-
-3)Final Review and Changes
-
-4)Future Implementations
-
-=======
-# busz
->>>>>>> 30777e2... Initial commit
+4) calculate_actual_duration.py
+    To calcualte the actual duration of the bus travelling time
+    Factor that have been calculated
+        - Finding the distance between 2 point using the testKM API
+        - Finding the speed of the point using distance/duration
+        - Finding the actual distance of the actual busstop location
+        - Finding the actual duration taken using the "actual_distance / speed"

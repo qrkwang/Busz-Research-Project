@@ -1,7 +1,10 @@
-import mpu
 import csv
-from datetime import datetime
+import os.path
 from array import *
+from datetime import datetime
+from os import path
+
+import mpu
 
 polyline_1 = [[1.66246,103.59877],
 [1.66245,103.59909],
@@ -1798,109 +1801,119 @@ bus_stop_2 = {1037:[1.4634,103.764932],
 		1071:[1.662585,	103.598608]
 }
 
-busStopDist = 5
-nearest_stop = dict()
-nearest_polyline = dict()
-nearestBusStop = 0
-p = []
+
+def calculate_nearestBS(file_dataset, new_file_location):   
+    #Initialize the respective variable
+    busStopDist = 5
+    nearest_stop = dict()
+    nearest_polyline = dict()
+    nearestBusStop = 0
+    p = [] 
+    
+    with open(file_dataset, mode='U', newline='') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        line_count = 0    
+        fieldnames = ['Vehicle_No', 'Date', 'Time', 'Location', 'Lat', 'Lng', 'Speed', 'Vehicle_Status', 'GPS',
+                                'Distance-KM', 'Vehicle_Batt.-V', 'Route', 'Nearest_Stop', 'Distance-BS']
+        
+        #Append the header first
+        with open(new_file_location, mode='a+', newline='') as csv_output:                 
+            writer = csv.writer(csv_output)
+            writer.writerow(fieldnames)
+    
+        for row in csv_reader:
+            nearest_stop.clear()
+            nearest_polyline.clear()
+            #strLat1 = row["Lat"]
+            #strLon1 = row["Lng"]
+            lat1 = float(row["Lat"])
+            lon1 = float(row["Lng"])
+            route = int(row["Route"])
+            vehicleNo = row["Vehicle_No"]
+            # print("datapoint on csv", route, lat1, lon1)
+
+            # map the coordinates to the polyline
+            count = 0
+            
+            if route == 1:
+                p = polyline_1
+            elif route == 2:
+                p = polyline_2
+                
+            for i in p:
+                lat3 = i[0]
+                lon3 = i[1]
+                dist = mpu.haversine_distance((lat1, lon1), (lat3, lon3))
+                new_data = {count: dist}
+                nearest_polyline.update(new_data)
+                count += 1
+
+            sorted_polyline = sorted(nearest_polyline, key=nearest_polyline.__getitem__)
+            count = 0
+            for k in sorted_polyline:
+                # print("{} : {}".format(k, nearest_polyline[k]))
+                lat1 = p[k][0]
+                lon1 = p[k][1]
+                break
+
+            # print("data point in csv", route, lat1, lon1)
+
+            # loop through the list of bus stop, and calculate the distance
+            if route == 1:
+                for k, v in bus_stop_1.items():
+                    lat2 = v[0]
+                    lon2 = v[1]
+                    bus_stop = k
+                    dist = mpu.haversine_distance((lat1, lon1), (lat2, lon2))
+                    # print (k, lat2, lon2, dist)
+                    new_data = {k: dist}
+                    nearest_stop.update(new_data)
+                    
+            elif route == 2:
+                for key, value in bus_stop_2.items():
+                    lat2 = value[0]
+                    lon2 = value[1]
+                    bus_stop = key
+                    dist = mpu.haversine_distance((lat1, lon1), (lat2, lon2))
+                    new_data = {key: dist}
+                    nearest_stop.update(new_data)
+
+            # print the nearest bus stop and distance
+            sorted_stops = sorted(nearest_stop, key=nearest_stop.__getitem__)
+            # count = 0
+            for k in sorted_stops:
+                if nearest_stop[k] <= 0.2:
+                    busStopDist = nearest_stop[k]
+                    nearestBusStop = k
+                    # print("{} : {}".format(k, nearest_stop[k]))
+                    # break
+
+                    # store the processed data back to the file
+                    output = {'Vehicle_No': vehicleNo, 'Date': row["Date"], 'Time': row["Time"],
+                            'Location': row["Location"], 'Lat': lat1, 'Lng': lon1, 'Speed': row["Speed"],
+                            'Vehicle_Status': row["Vehicle_Status"], 'GPS': row["GPS"], 'Distance-KM': row["Distance-KM"],
+                            'Vehicle_Batt.-V': row["Vehicle_Batt.-V"], 'Route': route, 'Nearest_Stop': nearestBusStop,
+                            'Distance-BS': busStopDist}
+                    # print(output)
+
+                    with open(new_file_location, mode='a+', newline='') as csv_output:                 
+                        writer = csv.DictWriter(csv_output, fieldnames=fieldnames)
+                        writer.writerow(output)
+                        
+                    
+                break
+            line_count += 1
+
+    print("Successfully completed")
+
 
 file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
-file_name = input("Save file as (include .csv) : ") # Save file location
 
-new_file_location = 'output/' + file_name
+if path.exists(file_dataset) is True:
+    file_name = input("Save file as (include .csv) : ") # Save file location
+    new_file_location = 'output/' + file_name
+    calculate_nearestBS(file_dataset, new_file_location)
+else:
+    print("The file doesn't exisit")
 
-with open(file_dataset, mode='U', newline='') as csv_file:
-    csv_reader = csv.DictReader(csv_file)
-    line_count = 0    
-    fieldnames = ['Vehicle_No', 'Date', 'Time', 'Location', 'Lat', 'Lng', 'Speed', 'Vehicle_Status', 'GPS',
-                              'Distance-KM', 'Vehicle_Batt.-V', 'Route', 'Nearest_Stop', 'Distance-BS']
-    
-    #Append the header first
-    with open(new_file_location, mode='a+', newline='') as csv_output:                 
-        writer = csv.writer(csv_output)
-        writer.writerow(fieldnames)
-   
-    for row in csv_reader:
-        nearest_stop.clear()
-        nearest_polyline.clear()
-        #strLat1 = row["Lat"]
- 		#strLon1 = row["Lng"]
-        lat1 = float(row["Lat"])
-        lon1 = float(row["Lng"])
-        route = int(row["Route"])
-        vehicleNo = row["Vehicle_No"]
-        # print("datapoint on csv", route, lat1, lon1)
 
-        # map the coordinates to the polyline
-        count = 0
-        
-        if route == 1:
-            p = polyline_1
-        elif route == 2:
-            p = polyline_2
-            
-        for i in p:
-            lat3 = i[0]
-            lon3 = i[1]
-            dist = mpu.haversine_distance((lat1, lon1), (lat3, lon3))
-            new_data = {count: dist}
-            nearest_polyline.update(new_data)
-            count += 1
-
-        sorted_polyline = sorted(nearest_polyline, key=nearest_polyline.__getitem__)
-        count = 0
-        for k in sorted_polyline:
-            # print("{} : {}".format(k, nearest_polyline[k]))
-            lat1 = p[k][0]
-            lon1 = p[k][1]
-            break
-
-        # print("data point in csv", route, lat1, lon1)
-
-        # loop through the list of bus stop, and calculate the distance
-        if route == 1:
-            for k, v in bus_stop_1.items():
-                lat2 = v[0]
-                lon2 = v[1]
-                bus_stop = k
-                dist = mpu.haversine_distance((lat1, lon1), (lat2, lon2))
-                # print (k, lat2, lon2, dist)
-                new_data = {k: dist}
-                nearest_stop.update(new_data)
-                
-        elif route == 2:
-            for key, value in bus_stop_2.items():
-                lat2 = value[0]
-                lon2 = value[1]
-                bus_stop = key
-                dist = mpu.haversine_distance((lat1, lon1), (lat2, lon2))
-                new_data = {key: dist}
-                nearest_stop.update(new_data)
-
-        # print the nearest bus stop and distance
-        sorted_stops = sorted(nearest_stop, key=nearest_stop.__getitem__)
-        # count = 0
-        for k in sorted_stops:
-            if nearest_stop[k] <= 0.2:
-                busStopDist = nearest_stop[k]
-                nearestBusStop = k
-                # print("{} : {}".format(k, nearest_stop[k]))
-                # break
-
-                # store the processed data back to the file
-                output = {'Vehicle_No': vehicleNo, 'Date': row["Date"], 'Time': row["Time"],
-                          'Location': row["Location"], 'Lat': lat1, 'Lng': lon1, 'Speed': row["Speed"],
-                          'Vehicle_Status': row["Vehicle_Status"], 'GPS': row["GPS"], 'Distance-KM': row["Distance-KM"],
-                          'Vehicle_Batt.-V': row["Vehicle_Batt.-V"], 'Route': route, 'Nearest_Stop': nearestBusStop,
-                          'Distance-BS': busStopDist}
-                # print(output)
-
-                with open(new_file_location, mode='a+', newline='') as csv_output:                 
-                    writer = csv.DictWriter(csv_output, fieldnames=fieldnames)
-                    writer.writerow(output)
-                    
-                   
-            break
-        line_count += 1
-
-print("Successfully completed")
