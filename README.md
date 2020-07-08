@@ -1,6 +1,6 @@
 <h1>#MyBusz Project</h1>
 
-<h2>Order to execute<h2>
+<h2>Order to execute</h2>
 1) <b>readInput.py</b> 
     <br>To calculate the geolocation of the address returning us the lat and lon
 
