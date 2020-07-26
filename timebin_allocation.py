@@ -10,7 +10,7 @@ FMT = '%I:%M:%S %p' # Format for time
 FMT_24 = '%H:%M:%S'
 
 def time_in_range(start, end, x):
-    """Return true if x is in the range [start, end]"""
+    #Return true if x is in the range [start, end]
     if start <= end:
         return start <= x <= end
     else:

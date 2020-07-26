@@ -56,7 +56,7 @@ def calculate_duration(file_dataset, new_file_location):
         
         for row in csv_reader:        
             FMT = '%I:%M:%S %p' # Format for time
-            date = datetime.strptime(row["Date"], "%d/%m/%y")    #Convert to date object
+            date = datetime.strptime(row["Date"], "%d/%m/%Y")    #Convert to date object
             day =  calendar.day_name[date.weekday()]   #Get the day from the calendar
             time = row["Time"]
             
@@ -85,6 +85,7 @@ def calculate_duration(file_dataset, new_file_location):
                     bus_row[1] = row
                     bus_row['route_order'] = route_order
                     bus_row['route'] = row["Route"]
+                    
                 
                 elif bus_row['route_order'] == route_order:
                     #Time difference if there is a jam
@@ -94,6 +95,7 @@ def calculate_duration(file_dataset, new_file_location):
                     bus_data[key - 1]['Lat_B'] = row['Lat']
                     bus_data[key - 1]['Lng_B'] = row['Lng']
                     bus_data[key - 1]['time_B'] = row['Time']
+                    bus_row[1] = row
                     
 
                 elif int(bus_row['route_order']) < route_order :
@@ -101,9 +103,7 @@ def calculate_duration(file_dataset, new_file_location):
                     bus_row['route_order'] = route_order
                     tdelta = datetime.strptime( row["Time"] , FMT) - datetime.strptime(bus_row[1]["Time"], FMT)
                     
-
-                    bus_stop_A = bus_row[1]["Nearest_Stop"]
-                    bus_stop_B = row["Nearest_Stop"]
+                    print(row["Time"])
 
                     #(Lat, Lng)
                     BS_A_coordinates = (bus_row[1]["Lat"], bus_row[1]["Lng"]) 
@@ -113,10 +113,10 @@ def calculate_duration(file_dataset, new_file_location):
                     new_data = {key : {'date': row["Date"], 
                                     'day' : day ,
                                     'time_A': bus_row[1]['Time'],
-                                    'BS_A' : bus_stop_A, 
+                                    'BS_A' : bus_row[1]["Nearest_Stop"], 
                                     'Lat_A' : bus_row[1]["Lat"], 'Lng_A' :  bus_row[1]["Lng"],
                                     'time_B': row['Time'],
-                                    'BS_B' : bus_stop_B, 
+                                    'BS_B' : row["Nearest_Stop"], 
                                     'Lat_B':row['Lat'] , 'Lng_B': row['Lng'] ,
                                     'duration': tdelta.seconds,
                                     'route' :  row['Route']
@@ -164,11 +164,13 @@ def calculate_duration(file_dataset, new_file_location):
             # print("data point in csv", route, lat1, lon1)
     print("Successfully completed")
 
-file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
+# file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
 
-if path.exists(file_dataset) is True:
-    file_name = input("Save file as (include .csv) : ") # Save file location
-    new_file_location = 'output/' + file_name
-    calculate_duration(file_dataset, new_file_location)
-else:
-    print("The file doesn't exisit")
+# if path.exists(file_dataset) is True:
+#     file_name = input("Save file as (include .csv) : ") # Save file location
+#     new_file_location = 'output/' + file_name
+#     calculate_duration(file_dataset, new_file_location)
+# else:
+#     print("The file doesn't exisit")
+    
+calculate_duration("output/sample_1_1.csv", "output/sample-1-2.csv")

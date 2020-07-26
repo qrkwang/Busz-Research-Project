@@ -9,7 +9,7 @@ time_dict = dict()
 
 valid = False
 count = 0
-start_time = '05:10:00 AM'
+start_time = '05:00:00 AM'
 minutes_increase = 30
 
 
