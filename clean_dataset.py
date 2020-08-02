@@ -45,7 +45,6 @@ def store_bs_route1(route_1_file):
             bus_route_1_distance.update(data)
             count += 1
       
-            
 def store_bs_route2(route_2_file):
     print("Storing bus order data (",route_2_file ,")","...")            
     with open(route_2_file, mode='U', encoding='utf-8-sig') as csv_file:
@@ -55,7 +54,6 @@ def store_bs_route2(route_2_file):
             data = {count : row}
             bus_route_2_distance.update(data)
             count += 1
-       
         
 #Cacluate the duration of the file
 def calculate_duration(file_dataset, new_file_location):
@@ -83,7 +81,6 @@ def calculate_duration(file_dataset, new_file_location):
         with open(new_file_location, mode='a+', newline='') as csv_output:                 
             writer = csv.writer(csv_output)
             writer.writerow(fieldnames)
-        
         
         for row in csv_reader:        
             FMT = '%I:%M:%S %p' # Format for time
@@ -196,7 +193,7 @@ def calculate_duration(file_dataset, new_file_location):
     print("Completed\n")
 
 def calculate_bus_distance()
-  #  Phrase the coordinates to pass into the URL
+    #Phrase the coordinates to pass into the URL
     coordinate1 = row['Lat_A'] + ',' + row['Lng_A']
     coordinate2 = row['Lat_B'] + ',' + row['Lng_B']
     

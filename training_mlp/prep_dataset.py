@@ -44,6 +44,7 @@ def prep_dataset(file_dataset, new_file_location):
                 #5 digitformat
                 bus_stop_A = "{0:0=5d}".format(int(row["BS_A"]))
                 bus_stop_B = "{0:0=5d}".format(int(row["BS_B"]))
+                
                 # store the processed data back to the file
                 output = {'bus_stop_code' : bus_stop_A + bus_stop_B,
                         'current_time': time,

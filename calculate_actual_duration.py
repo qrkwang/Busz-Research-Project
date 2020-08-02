@@ -146,7 +146,7 @@ def calculate_actual_duration(file_dataset, new_file_location):
             
             #print the data
             csvwriter.writerow(dict(row, Distance= data ,  Bus_Distance= bus_distance, Speed = speed, Actual_Duration = actual_duration, time_bin = time_bin))
-
+            
     print("Completed")
 
 # file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
