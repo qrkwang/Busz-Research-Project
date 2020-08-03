@@ -14,6 +14,7 @@ target 'BusV3' do
 
   pod 'react-native-ble-manager', :path => '../node_modules/react-native-ble-manager'
 
+
   target 'BusV3Tests' do
     inherit! :complete
     # Pods for testing

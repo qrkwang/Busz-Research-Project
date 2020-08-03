@@ -90,6 +90,20 @@ class SecondScreen extends Component {
         const objOfArray = {
           arrayKey: responseJson,
         };
+        var busObj = new Array(responseJson.length);
+        for (var i = 0; i < responseJson.length; i++) {
+          // console.log(i);
+          var obj = responseJson[i];
+          beaconMacArray[i] = obj.beacon_mac;
+          // console.log(obj.beacon_mac);
+        }
+        // const objOfArray = {
+        //   beaconMacArray: array,
+        // };
+        // console.log(objOfArray);
+        this.setState({
+          beaconMacArray: beaconMacArray,
+        });
         console.log(responseJson[0].beacon_mac);
         this.setState({
           dataSource: objOfArray.arrayKey,
@@ -99,6 +113,9 @@ class SecondScreen extends Component {
 
   render() {
     const {selectedValue} = this.props.route.params;
+    const string = selectedValue.split(' ');
+    const bus_plate = string[1];
+    const bus_number = string[0];
 
     // var busInput = navigation.getParam('busInput');
     // var busInputStr = JSON.stringify(busInput);
@@ -111,17 +128,32 @@ class SecondScreen extends Component {
         {/* <TouchableOpacity style={styles.button}>
           <Text>Simple Get Call</Text>
         </TouchableOpacity> */}
-        <Text
-          style={{
-            alignSelf: 'center',
-            textAlign: 'center',
-            fontWeight: 'bold',
-            fontSize: 30,
-            marginTop: 20,
-          }}>
-          Bus Plate: XX {'\n'}
-          {selectedValue}
-        </Text>
+        <View style={{flexDirection: 'row'}}>
+          <Text
+            style={{
+              // alignSelf: 'center',
+              // textAlign: 'left',
+              fontWeight: 'bold',
+              fontSize: 30,
+              marginTop: 20,
+            }}>
+            Route: {'\n'}
+            Bus Plate: {'\n'}
+            Bus No:
+          </Text>
+          <Text
+            style={{
+              // alignSelf: 'center',
+              // textAlign: 'left',
+              fontWeight: 'bold',
+              fontSize: 30,
+              marginTop: 20,
+              marginLeft: 20,
+            }}>
+            {'\n'}
+            {bus_plate} {'\n'} {bus_number}
+          </Text>
+        </View>
 
         {/* <MapView
           style={styles.mapStyle}

@@ -21,6 +21,10 @@ import {
 import {createStackNavigator} from '@react-navigation/stack';
 import {Picker} from '@react-native-community/picker';
 import {BleManager} from 'react-native-ble-plx';
+// import {getLocation} from './location-service';
+import {getLocation} from './location-service';
+
+navigator.geolocation = require('@react-native-community/geolocation');
 
 const DeviceManager = new BleManager();
 
@@ -35,7 +39,7 @@ export async function requestLocationPermission() {
     );
     if (granted === PermissionsAndroid.RESULTS.GRANTED) {
       console.log('You can use the location');
-      alert('You can use the location');
+      // alert('You can use the location');
     } else {
       console.log('location permission denied');
       alert('Location permission denied');
@@ -44,44 +48,139 @@ export async function requestLocationPermission() {
     console.warn(err);
   }
 }
+
 class HomeScreen extends Component {
   constructor(props) {
     super(props);
+
+    this.matchMac = this.matchMac.bind(this);
   }
   state = {
     busValues: [],
     selectedValue: '',
+    beaconMacArray: [],
+    scannedMacArray: [],
+    matchedBeacons: [],
+    busRoute: 0,
+    count: 0,
   };
 
-  async componentDidMount() {
-    await requestLocationPermission();
-    const subscription = DeviceManager.onStateChange((state) => {
-      if (state === 'PoweredOn') {
-        DeviceManager.startDeviceScan(null, null, (error, device) => {
-          if (error) {
-            console.log('error', error);
-          }
-          if (device !== null) {
-            console.log(
-              'device found ----> [id,name]',
-              device.id,
-              device.name,
-              device.rssi,
-            );
-            this.setState({
-              count: this.state.count + 1,
-            });
-            console.log(this.state.count);
-            if (this.state.count > 20) {
-              DeviceManager.stopDeviceScan();
-            }
-          }
-        });
+  //Match the MAC addy and then set to picker for it to show
+  matchMac() {
+    const scannedMac = [...this.state.scannedMacArray];
+    const beaconMac = [...this.state.beaconMacArray];
+    const matchedBeacons = [];
+    const busValues = [...this.state.busValues];
+    for (let [key, value] of scannedMac) {
+      for (var i = 0; i < beaconMac.length; i++) {
+        console.log(key, ' | ', beaconMac[i]);
 
-        subscription.remove();
+        if (key === beaconMac[i]) {
+          console.log('MATCHEDDD');
+          matchedBeacons.push(key + ' ' + value);
+          break;
+        }
       }
-    }, true);
-    this.GetRealData();
+    }
+    console.log(matchedBeacons);
+
+    //If only 1 beacon detected
+    if (matchedBeacons.length == 1) {
+      console.log(matchedBeacons[0]);
+      var firstElement = matchedBeacons[0].split(' ');
+      var mac_addy = firstElement[0];
+      console.log('size is 1!!!');
+      var filteredArray = busValues.filter(
+        (bus) => bus.beacon_mac === mac_addy,
+      );
+      console.log(filteredArray);
+      this.setState({
+        busValues: filteredArray,
+      });
+    }
+
+    //If more than 1 beacon detected
+    //If location is close to route 1/2 departure:
+    //Set param to route 1/2
+    //Set picker to show bus service numbers & plates
+    if (matchedBeacons.length > 1) {
+      console.log('More than 1 beacons detected!!!');
+      var multipleFilteredArray = [];
+
+      //Do location here to set route
+
+      for (var i = 0; i < matchedBeacons.length; i++) {
+        var element = matchedBeacons[i].split(' ');
+        var mac_addy = element[0];
+        var filteredArray = busValues.filter(
+          (bus) => bus.beacon_mac === mac_addy,
+        );
+        console.log(filteredArray);
+        //Filter array with elements
+        if (filteredArray != null) {
+          console.log('FOUND', mac_addy);
+          multipleFilteredArray.push(filteredArray[0]);
+        }
+      }
+      console.log(multipleFilteredArray);
+      this.setState({
+        busValues: multipleFilteredArray,
+      });
+    }
+
+    if (matchedBeacons.length == 0) {
+      console.log('No beacons detected!!!');
+    }
+    //If matchedbeacon.length == 0
+
+    // for (var i = 0; i < beaconMac.length; i++) {
+    //   for (var j = 0; j < scannedMac.length; j++) {
+    //     var split = scannedMac[j].split(' ');
+    //     console.log(beaconMac[i], ' | ', split[0]);
+    //     if (beaconMac[i] === split[0]) {
+    //       matchedBeacons.push(scannedMac[j]);
+    //       console.log('MATCHEDDDDD', split[0]);
+    //     }
+    //   }
+    // }
+    return scannedMac;
+  }
+  async componentDidMount() {
+    //Fetch database beacon macs
+    await this.GetRealData();
+
+    //Get location permission
+    await requestLocationPermission();
+
+    //Fetch user location to determine route
+    this.getLoc();
+
+    //Match the MAC addy and then set to picker for it to show
+    this.scan();
+
+    // this.matchMac();
+    // console.log('third');
+
+    // console.log(this.state.scannedMacArray);
+
+    // Geolocation.getCurrentPosition(
+    //   (position) => {
+    //     const initialPosition = JSON.stringify(position);
+    //     console.log(position.coords.latitude);
+    //     console.log(position.coords.longitude);
+
+    //     console.log('position' + initialPosition);
+    //   },
+    //   (error) => {
+    //     // See error code charts below.
+    //     console.log(error.code, error.message);
+    //   },
+    //   {
+    //     enableHighAccuracy: true,
+    //     timeout: 10000,
+    //     maximumAge: 10000,
+    //   },
+    // );
     // const url = 'http://192.168.10.10/getBusInfo';
     // fetch(url, {
     //   method: 'POST',
@@ -109,6 +208,65 @@ class HomeScreen extends Component {
     //     });
     //   });
   }
+  scan() {
+    let sayings = new Map();
+
+    const subscription = DeviceManager.onStateChange((state) => {
+      if (state === 'PoweredOn') {
+        var sMacArray = [];
+        DeviceManager.startDeviceScan(null, null, (error, device) => {
+          if (error) {
+            console.log('error', error);
+          }
+          if (device !== null) {
+            console.log(
+              'device found ----> [id,name]',
+              device.id,
+              device.name,
+              device.rssi,
+            );
+            sayings.set(device.id, device.rssi);
+
+            // sMacArray.push(device.id + ' ' + device.rssi),
+            this.setState({
+              count: this.state.count + 1,
+            });
+            console.log('count' + this.state.count);
+            if (this.state.count > 20) {
+              DeviceManager.stopDeviceScan();
+
+              // console.log(sMacArray);
+              this.setState({
+                scannedMacArray: sayings,
+              });
+              this.matchMac();
+              // console.log(this.state.scannedMacArray);
+            }
+          }
+        });
+        subscription.remove();
+      }
+    }, true);
+  }
+
+  //get location and set route
+  getLoc() {
+    getLocation().then((data) => {
+      console.log(data);
+      // this.setState({
+      //   region: {
+      //     latitude: data.latitude,
+      //     longitude: data.longitude,
+      //     latitudeDelta: 0.003,
+      //     longitudeDelta: 0.003,
+      //   },
+      // });
+    });
+    //route 1 - departure terminal
+    //1.662585, 103.598608
+    //   route 2 - departure terminal
+    // 1.463400,103.764932
+  }
 
   // GetFakeData = () => {
   //   fetch('https://jsonplaceholder.typicode.com/users')
@@ -121,26 +279,48 @@ class HomeScreen extends Component {
   //     });
   // };
 
-  GetRealData = () => {
-    fetch('http://192.168.10.10/getBusInfo', {
+  // GetBeaconMacs = () => {
+  //   fetch('http://192.168.10.10/getBusInfo', {
+  //     method: 'POST',
+  //   })
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       console.log(json);
+  //       this.setState({
+  //         busValues: json,
+  //       });
+  //     });
+  // };
+  GetRealData = async () => {
+    fetch('http://192.168.68.74/getBusInfo', {
       method: 'POST',
     })
       .then((response) => response.json())
       .then((json) => {
         console.log(json);
+        // console.log(json[1].beacon_mac);
+        var bMacArray = [];
+
+        for (var i = 0; i < json.length; i++) {
+          // console.log(json[i].beacon_mac);
+          bMacArray.push(json[i].beacon_mac);
+        }
+
         this.setState({
           busValues: json,
+          beaconMacArray: bMacArray,
         });
+        // console.log('beaconMacArray', this.state.beaconMacArray[0]);
       });
   };
 
   render() {
     let myUsers = this.state.busValues.map((myValue, myIndex) => {
-      console.log('myValue: ' + myValue.bus_service_no);
+      // console.log('myValue: ' + myValue.bus_service_no);
       return (
         <Picker.Item
           label={myValue.bus_service_no + ' - ' + myValue.plate_no}
-          value={myValue.bus_service_no}
+          value={myValue.bus_service_no + ' ' + myValue.plate_no}
           key={myIndex}
         />
       );
