@@ -57,7 +57,7 @@ export default class App extends Component {
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="HomeScreen"
-          screenOptions={{gestureEnabled: false}}>
+          screenOptions={{gestureEnabled: false, headerShown: false}}>
           <Stack.Screen
             name="HomeScreen"
             component={HomeScreen}
