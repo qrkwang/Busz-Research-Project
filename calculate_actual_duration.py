@@ -14,11 +14,15 @@ import requests
 # gmaps = googlemaps.Client(key='AIzaSyCviITurPSjJLUxriM7WjfD5dHs4ZltNYQ')
 
 #URL to get the distance between two gps points along the polyline defined for the bus route
-URL = "https://laravelsyd-fypfinalver.herokuapp.com/testgetKM"
+# URL = "https://laravelsyd-fypfinalver.herokuapp.com/testgetKM"
+URL = "http://192.168.10.10/testgetKM"
 
 bus_route_1_distance = dict()
 bus_route_2_distance = dict()
 time_frame = dict()
+
+route_1 = dict()
+route_2 = dict()
 
 FMT = '%I:%M:%S %p' # Format for time
 FMT_24 = '%H:%M:%S'
@@ -46,6 +50,22 @@ with open('dataset/time_frame.csv', mode='U', encoding='utf-8-sig') as csv_file:
         data = {row['index'] : [row['time_start'], row['time_end']]}
         time_frame.update(data)
 
+#Storing the order into route
+with open('dataset/route_bus_stop.csv', mode='U', newline='') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    for row in csv_reader:
+        if int(row["route_id"]) is 1:
+            bus_stop = row["bus_stop_id"] 
+            route_order = row["route_order"]
+            new_data = {bus_stop: int(route_order)} #Key => bus stop , Value => route order
+            route_1.update(new_data)
+            
+        elif int(row["route_id"]) is 2:
+            bus_stop = row["bus_stop_id"] 
+            route_order = row["route_order"]
+            new_data = {bus_stop: int(route_order)} #Key => bus stop , Value => route order
+            route_2.update(new_data)
+            
 def time_in_range(start, end, x):
     #Return true if x is in the range [start, end]
     if start <= end:
@@ -67,9 +87,9 @@ def time_bin_index(time_A):
             time_range = time_frame[k][0] + '-' + time_frame[k][1]
             return k
             break
-          
 
 def calculate_actual_duration(file_dataset, new_file_location):
+    l = 0
     with open(file_dataset , mode='r' ,newline='') as input ,  open(new_file_location, 'w', newline='') as output:
         csv_reader = csv.DictReader(input)
         fieldnames = csv_reader.fieldnames +  ['Distance'] +  ['Bus_Distance'] + ["Speed"] + ["Actual_Duration"] + ['time_bin'] # add column name to beginning
@@ -81,7 +101,7 @@ def calculate_actual_duration(file_dataset, new_file_location):
             #### FIND THE Actual Distance ###
             if int(row['Route']) is 1:
                 route_distance_dic = bus_route_1_distance
-            elif  int(row['Route']) is 2:
+            elif int(row['Route']) is 2:
                 route_distance_dic = bus_route_2_distance
                 
             distance = 0.0
@@ -103,19 +123,18 @@ def calculate_actual_duration(file_dataset, new_file_location):
 
             if stop_1 == stop_2:
                 # Take the end of the end of the bus route distance
-                bus_distance = bus_route_1_distance[stop_2]['Distance']
+                bus_distance = route_distance_dic[stop_2]['Distance']
             else:
                 # Initilize the first stop
-                bus_distance =  float(bus_route_1_distance[stop_1]['Distance'])
+                bus_distance =  float(route_distance_dic[stop_1]['Distance'])
                 temp_stop = stop_1
                 
                 #Contiune to travel to the other stop
                 while temp_stop != stop_2:
                     temp_stop += 1
-                    bus_distance += float(bus_route_1_distance[temp_stop]['Distance'])
+                    bus_distance += float(route_distance_dic[temp_stop]['Distance'])
                 # print('Bus A' ,row['BS_A'], 'Bus B ',row['BS_B'], 'Distance', distance )
-            
-            
+                
             #### TO FIND THE DISTANCE ####
             #  Phrase the coordinates to pass into the URL
             coordinate1 = row['Lat_A'] + ',' + row['Lng_A']
@@ -126,34 +145,110 @@ def calculate_actual_duration(file_dataset, new_file_location):
             
             r = requests.post(URL,  my_dictionary) 
             #Obtain the output encoded in JSON (array)
-            data = r.json()
-            speed = 0.0
-            actual_duration = 0.0
-            
-            if str(data) != '[]':
-                data = data[0]
-                
-                #Calculate speed
-                speed = float(data) / float(row["Duration(h)"])
-       
+            if r.status_code != 500:
+                data = r.json()            
+                speed = 0.0
+                actual_duration = 0.0
 
-                #Calculate Actual Duration
-                actual_duration = float(bus_distance) / float(speed) 
+                if data != -1:
+                    data = float(data[0])
+                    
+                    #Calculate speed
+                    speed = float(data) / float(row["Duration(h)"])
+        
+                    #Calculate Actual Duration
+                    if float(speed) != 0:
+                        actual_duration = float(bus_distance) / float(speed) 
+    
+                #Allocate the timebin
+                time_bin = time_bin_index(row['Time_A'])
+                            
+                #Get the route number and define it
+                if int(row["Route"]) is 1:
+                    route_num = route_1
+                elif int(row["Route"]) is 2:
+                    route_num = route_2
+    
+                current_route = int(route_num[row["BS_A"]])
+                end_route = int(route_num[row["BS_B"]])
+
+                if current_route + 1 == end_route:
+                    csvwriter.writerow(dict(row, Distance= data ,  Bus_Distance= bus_distance, Speed = speed, Actual_Duration = actual_duration, time_bin = time_bin))
+                
+                else:
+                    # Seperate the different stop
+                    start_route = int(route_num[row["BS_A"]])
+                    
+                    # Store the record of time B
+                    actual_time_B = row["Time_B"]
+                    cal_time_A = row["Time_A"]
+                    
+                    lat_B = row["Lat_B"]
+                    lng_B = row["Lng_B"]
+                    status = 0
+
+                    while current_route != end_route :
+
+                        bus_stop_A = list(route_num.keys())[list(route_num.values()).index(current_route)]
+                        current_route = current_route + 1
+                        bus_stop_B = list(route_num.keys())[list(route_num.values()).index(current_route)]
    
-            #Allocate the timebin
-            time_bin = time_bin_index(row['Time_A'])
-            print(time_bin)
-            
-            #print the data
-            csvwriter.writerow(dict(row, Distance= data ,  Bus_Distance= bus_distance, Speed = speed, Actual_Duration = actual_duration, time_bin = time_bin))
+                        row["BS_A"] = bus_stop_A
+                        row["BS_B"] = bus_stop_B
+                        
+                        # Loop to find the key
+                        for k,v in route_distance_dic.items():
+                            if row['BS_A'] == v['Stop1']:
+                                stop_1 = k
+                                
+                        # Recalculate the speed and replace the distance
+                        bus_distance = float(route_distance_dic[stop_1]['Distance'])
+                        actual_duration = float(bus_distance) / float(speed) 
+                        
+                        #Convert hour to seconds
+                        duration = int(float(actual_duration) * 3600)
+                        
+                        tdelta = datetime.strptime(cal_time_A, FMT)  + timedelta(seconds=duration)  #Convert to date object
+                        time = tdelta.strftime(FMT) 
+                        
+                        if current_route - 1 == start_route:
+                            row["Time_B"] = time
+                            row["Lat_B"] = "-"
+                            row["Lng_B"] = "-"
+                            
+    
+                            cal_time_A = time
+                            
+                        elif current_route == end_route:    
+                            row["Time_A"] = cal_time_A      
+                            row["Lat_A"] = "-"
+                            row["Lng_A"] = "-"
+                            
+                            row["Time_B"] = actual_time_B
+                            row["Lat_B"] = lat_B
+                            row["Lng_B"] = lng_B
+                        else:
+                   
+                            row["Time_A"] = cal_time_A
+                            row["Lat_A"] = "-"
+                            row["Lng_A"] = "-"
+                            
+                            row["Time_B"] = time
+                            row["Lat_B"] = "-"
+                            row["Lng_B"] = "-"
+                            
+                            cal_time_A = time
+
+                        csvwriter.writerow(dict(row, Distance= data , Bus_Distance= bus_distance, Speed = speed, Actual_Duration = actual_duration, time_bin = time_bin))
             
     print("Completed")
 
 # file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
-file_dataset = "output/sample-1-2.csv"
+file_dataset = "output/BJM9017_12-1_3.csv"
 
 if path.exists(file_dataset) is True:
-    file_name = input("Save file as (include .csv) : ") # Save file location
+    # file_name = input("Save file as (include .csv) : ") # Save file location
+    file_name = "BJM9017_12-1_4.csv"
     new_file_location = 'output/' + file_name
     calculate_actual_duration(file_dataset, new_file_location)
 else:

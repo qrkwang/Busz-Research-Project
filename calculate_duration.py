@@ -90,12 +90,13 @@ def calculate_duration(file_dataset, new_file_location):
                 elif bus_row['route_order'] == route_order:
                     #Time difference if there is a jam
                     tdelta = datetime.strptime( row["Time"] , FMT) - datetime.strptime(bus_row[1]["Time"], FMT)
-                    #Get the previous data key and update the time
-                    bus_data[key - 1]['duration'] += tdelta.seconds
-                    bus_data[key - 1]['Lat_B'] = row['Lat']
-                    bus_data[key - 1]['Lng_B'] = row['Lng']
-                    bus_data[key - 1]['time_B'] = row['Time']
-                    bus_row[1] = row
+                    if bool(bus_data):
+                        #Get the previous data key and update the time
+                        bus_data[key - 1]['duration'] += tdelta.seconds
+                        bus_data[key - 1]['Lat_B'] = row['Lat']
+                        bus_data[key - 1]['Lng_B'] = row['Lng']
+                        bus_data[key - 1]['time_B'] = row['Time']
+                        bus_row[1] = row
                     
 
                 elif int(bus_row['route_order']) < route_order :
@@ -173,4 +174,4 @@ def calculate_duration(file_dataset, new_file_location):
 # else:
 #     print("The file doesn't exisit")
     
-calculate_duration("output/sample_1_1.csv", "output/sample-1-2.csv")
+calculate_duration("output/BJM9017_12-1_nearest_busstop.csv", "output/BJA9017_12-1_3.csv")

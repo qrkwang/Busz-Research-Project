@@ -1826,10 +1826,14 @@ def calculate_nearestBS(file_dataset, new_file_location):
             nearest_polyline.clear()
             #strLat1 = row["Lat"]
             #strLon1 = row["Lng"]
+
             lat1 = float(row["Lat"])
             lon1 = float(row["Lng"])
-            route = int(row["Route"])
-            print(route)
+            if not row["Route"]:
+                route = 0
+            else:
+                route = int(row["Route"])
+    
             print(row["Vehicle_No"])
             vehicleNo = row["Vehicle_No"]
             # print("datapoint on csv", route, lat1, lon1)

@@ -59,11 +59,11 @@ def prep_dataset(file_dataset, new_file_location):
             csvwriter.writerow(output)
     print("Completed")
 
-file_dataset = "output/sample-2-2.csv" # Location of dataset to clean
+file_dataset = "output/BJM9017_12-1_4.csv" # Location of dataset to clean
         
 if path.exists(file_dataset) is True:
     # file_name = input("Save file as (include .csv) : ") # Save file location
-    file_name = "prep_data-1.csv"
+    file_name = "BJM9017_12-2_prep.csv"
     new_file_location = 'output/' + file_name
     prep_dataset(file_dataset, new_file_location)
 else:

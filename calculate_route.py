@@ -31,6 +31,7 @@ fieldnames =  ['Vehicle_No',
             'route_2',
             'route_num'
             ]
+
 new_file_location = "test4.csv"
 
 try:
@@ -77,33 +78,40 @@ try:
                             }}
             data.update(new_data)
        
-            print("data_1" ,float(data_1) , "route_1" , float(previous['route_1']))
+            point = 0
+            
             if key != 0:
-                print(current_num)
-                if current_num == 0 :
+                if current_num == 1 :
+                    if float(data_2) < 0.06 :
+                        current_num = 0
+                        print("row",key,"route_num", data[key]["route_num"])
+                    
+                elif current_num == 2 :
+                    if float(data_1) < 0.06 :
+                        current_num = 0
+                        print("row",key,"route_num", data[key]["route_num"])
+                        
+                elif current_num == 0 :
                 #Start from route 1
                     if float(previous['route_1']) < 0.05:
                         if float(data_1) > 0.05 : 
                             data[key]["route_num"] = 1
                             data[key-1]["route_num"] = 1
                             current_num = 1
-                            print(data[key-1]["route_num"])
+                            
+                            print("row",key, "route_num", data[key]["route_num"])
+                            print("row",key - 1 ,"route_num", data[key-1]["route_num"])
                         
                     elif float(previous['route_2']) < 0.05:
                         if float(data_2) > 0.05 :
                             data[key]["route_num"] = 2
                             data[key-1]["route_num"] = 2
-                            print("2")
                             current_num = 2
+                            
+                            print("row",key,"route_num", data[key]["route_num"])
+                            print("row",key - 1 ,"route_num", data[key-1]["route_num"])
                         
-                elif current_num == 1 :
-                    if float(data_2) < 0.06 :
-                        current_num = 0
-                    
-                elif current_num == 2 :
-                    if float(data_1) < 0.06 :
-                        current_num = 0
-            
+           
             previous['route_1'] = data_1
             previous['route_2'] = data_2
             
@@ -111,8 +119,7 @@ try:
             count = count + 1
             print(count)
             
-            if count == 50:
-                
+            if count == 50:                
                 for k in data :
                     output = {'Vehicle_No': data[k]["Vehicle_No"], 
                             'Date' : data[k]['Date'] ,

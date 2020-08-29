@@ -158,11 +158,12 @@ def train_data(file_dataset, bus_service, model_path):
 #Capture start time
 start_time = time.time()
 
-file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
+# file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
+file_dataset = "output/BJA8742_12-2_prep.csv"
 
 if path.exists(file_dataset) is True:
     bus_service = input("Bus_Service : ") # Save file location
-    model_path = "234"
+    model_path = "test"
     train_data(file_dataset, bus_service, model_path)
 else:
     print("The file doesn't exist")

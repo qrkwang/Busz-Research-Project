@@ -12,7 +12,7 @@ route_2 = dict()
 bus_route_1_distance = dict()
 bus_route_2_distance = dict()
 
-URL = "https://laravelsyd-fypfinalver.herokuapp.com/testgetKM"
+URL = "http://192.168.10.10/testgetKM"
 
 
 #Initializing the order into route
@@ -192,7 +192,7 @@ def calculate_duration(file_dataset, new_file_location):
             # print("data point in csv", route, lat1, lon1)
     print("Completed\n")
 
-def calculate_bus_distance()
+def calculate_bus_distance():
     #Phrase the coordinates to pass into the URL
     coordinate1 = row['Lat_A'] + ',' + row['Lng_A']
     coordinate2 = row['Lat_B'] + ',' + row['Lng_B']
