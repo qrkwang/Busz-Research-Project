@@ -11,6 +11,7 @@ import {
   ActivityIndicator,
   Button,
   BackHandler,
+  Alert,
 } from 'react-native';
 import moment from 'moment';
 
@@ -52,6 +53,7 @@ class SecondScreen extends Component {
       busAhead: 'Loading',
       myDistToTerm: 'Loading',
       currentStop: 'Loading',
+      insertErrorCounter: 0,
       // selectedValue: this.props.navigation.state.params.selectedValue,
     };
   }
@@ -188,13 +190,13 @@ class SecondScreen extends Component {
       .then((data) => {
         console.log('buses', data);
         this.setState({busLocations: data}, () => {
-          this.test();
+          this.afterGetBus();
         });
       })
       .catch((error) => console.log('error fetching getbuslocations', error));
   }
-  test() {
-    console.log('test');
+  afterGetBus() {
+    console.log('afterGetBus');
 
     console.log(Object.keys(this.state.busLocations).length);
     var destination;
@@ -206,6 +208,9 @@ class SecondScreen extends Component {
 
       if (this.state.route == value.route_id) {
         console.log('route is ', this.state.route);
+        if (value.bus_id == this.state.bus_id) {
+          continue;
+        }
         if (this.state.route == 1) {
           destination = '1.463400,103.764932';
         } else if (this.state.route == 2) {
@@ -291,10 +296,17 @@ class SecondScreen extends Component {
       .catch((error) => console.log('error fetching getbusstop', error));
   }
   componentDidMount() {
-    BackHandler.addEventListener(
-      'hardwareBackPress',
-      this.handleBackButtonClick,
-    );
+    const backAction = () => {
+      Alert.alert('Hold on!', 'Back does not work on this screen.', [
+        {
+          text: 'OK',
+          onPress: () => null,
+          style: 'cancel',
+        },
+      ]);
+      return true;
+    };
+    BackHandler.addEventListener('hardwareBackPress', backAction);
 
     const {selectedValue} = this.props.route.params;
     const {item} = this.props.route.params;
@@ -302,9 +314,16 @@ class SecondScreen extends Component {
     let bus_number = '';
     let bus_id = '';
     if (selectedValue != null) {
-      const string = selectedValue.split(' ');
+      console.log(selectedValue);
+      const string = selectedValue.toString().split(' ');
+      console.log(string);
+
       bus_plate = string[1];
       bus_number = string[0];
+      bus_id = string[2];
+      console.log('bus IDDD', bus_id);
+      console.log('bus plate', bus_plate);
+      console.log('bus num', bus_number);
     } else {
       bus_plate = item.plate_no;
       bus_number = item.bus_service_no;
@@ -407,36 +426,64 @@ class SecondScreen extends Component {
           console.log('error fetching getnearbybusstops', error),
         );
 
-      //2) Insert locations for 5 times before stopping
+      //2) Insert locations for 5 times before stopping (If bus driver has stopped working and left the route)
       //use http://localhost:5000/bus_insertlocation
       //parameters: bus_id, route_id, imei, latlong,speed, date
       let uniqueId = DeviceInfo.getUniqueId(); //Not IMEI because Android 10+ does not allow app to retrieve IMEI anymore.
 
       var date = moment().format('YYYY-MM-DD HH:mm:ss');
 
+      console.log('bus_id', this.state.bus_id);
+      console.log('route_id', this.state.route);
       console.log('imei', uniqueId);
       console.log('latlong', locationNow);
       console.log('speed', newRegion.speed);
       console.log('date ', date);
 
-      // var requestOptions = {
-      //   method: 'POST',
-      //   headers: {'Content-Type': 'application/json'},
-      //   body: JSON.stringify({
-      //     bus_id: this.state.bus_id,
-      //     route_id: 1,
-      //     imei: uniqueId,
-      //     latlong: 1,
-      //     speed: 1,
-      //     date: 1,
-      //   }),
-      // };
-      // fetch('http://192.168.68.74/bus_insertlocation', requestOptions)
-      //   .then((response) => response.json())
-      //   .then((result) => {
-      //     console.log('insert location', result);
-      //   })
-      //   .catch((error) => console.log('error inserting location', error));
+      var requestOptions = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          bus_id: this.state.bus_id,
+          route_id: this.state.route,
+          imei: uniqueId,
+          latlong: locationNow,
+          speed: newRegion.speed,
+          date: '',
+        }),
+      };
+
+      fetch('http://192.168.68.74/bus_insertlocation', requestOptions)
+        .then((response) => response.text())
+        .then((result) => {
+          var errorCount = this.state.insertErrorCounter;
+          // console.log('insert location', result);
+          var splittedLines = result.toString().split('<br>');
+
+          // console.log('splitted Lines', splittedLines[0]);
+          // console.log(splittedLines[1].trim());
+          // console.log('insert success');
+          // console.log('splitted Lines', splittedLines[2]);
+          // console.log(splittedLines[1].trim() == 'insert success');
+
+          if (errorCount < 9) {
+            if (splittedLines[1].trim() === 'insert success') {
+              errorCount = 0;
+              console.log('INSERT SUCCESSS!!!!');
+            } else {
+              console.log('TOO FARRRR');
+              errorCount = errorCount + 1;
+              this.setState({
+                insertErrorCounter: errorCount,
+              });
+            }
+            console.log('ERROR COUNT: ', errorCount);
+          } else {
+            //If "too far from route" for 10 times already, exit App
+            BackHandler.exitApp();
+          }
+        })
+        .catch((error) => console.log('error inserting location', error));
 
       //3) Getting all bus coords and determine BUS AHEAD on every bus movement
       if (this.state.route == 1) {

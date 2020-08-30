@@ -79,19 +79,8 @@ class HomeScreen extends Component {
     })
       .then((data) => {
         this.scan();
-
-        // The user has accepted to enable the location services
-        // data can be :
-        //  - "already-enabled" if the location services has been already enabled
-        //  - "enabled" if user has clicked on OK button in the popup
       })
-      .catch((err) => {
-        // "err" : { "code" : "ERR00|ERR01|ERR02", "message" : "message"}
-        // codes :
-        //  - ERR00 : The user has clicked on Cancel button in the popup
-        //  - ERR01 : If the Settings change are unavailable
-        //  - ERR02 : If the popup has failed to open
-      });
+      .catch((err) => {});
   }
 
   // async requestIMEIPermission() {
@@ -123,12 +112,9 @@ class HomeScreen extends Component {
   //Match the MAC addy and then set to picker for it to show
   async matchMac(beaconMac) {
     const scannedMac = [...this.state.scannedMacArray];
-    // const beaconMac = [...this.state.beaconMacArray];
-    // const beaconMac = this.GetRealData();
     const matchedBeacons = [];
     const busValues = [...this.state.busValues];
-    // console.log(beaconMac);
-    // console.log(scannedMac);
+
     for (let [key, value] of scannedMac) {
       for (var i = 0; i < beaconMac.length; i++) {
         // console.log(key, ' | ', beaconMac[i]);
@@ -165,8 +151,6 @@ class HomeScreen extends Component {
       console.log('More than 1 beacons detected!!!');
       var multipleFilteredArray = [];
 
-      //Do location here to set route
-
       for (var i = 0; i < matchedBeacons.length; i++) {
         var element = matchedBeacons[i].split(' ');
         var mac_addy = element[0];
@@ -189,18 +173,6 @@ class HomeScreen extends Component {
     if (matchedBeacons.length == 0) {
       console.log('No beacons detected!!!');
     }
-    //If matchedbeacon.length == 0
-
-    // for (var i = 0; i < beaconMac.length; i++) {
-    //   for (var j = 0; j < scannedMac.length; j++) {
-    //     var split = scannedMac[j].split(' ');
-    //     console.log(beaconMac[i], ' | ', split[0]);
-    //     if (beaconMac[i] === split[0]) {
-    //       matchedBeacons.push(scannedMac[j]);
-    //       console.log('MATCHEDDDDD', split[0]);
-    //     }
-    //   }
-    // }
     return scannedMac;
   }
   async componentDidMount() {
@@ -208,6 +180,7 @@ class HomeScreen extends Component {
 
     //Get location permission
     await this.requestLocationPermission();
+
     // await this.requestIMEIPermission();
 
     // const IMEI = require('react-native-imei');
@@ -276,11 +249,9 @@ class HomeScreen extends Component {
     //   });
   }
   scan() {
-    let sayings = new Map();
-
+    let devices = new Map();
     const subscription = DeviceManager.onStateChange((state) => {
       if (state === 'PoweredOn') {
-        var sMacArray = [];
         DeviceManager.startDeviceScan(null, null, (error, device) => {
           if (error) {
             console.log('error', error);
@@ -292,9 +263,7 @@ class HomeScreen extends Component {
               device.name,
               device.rssi,
             );
-            sayings.set(device.id, device.rssi);
-
-            // sMacArray.push(device.id + ' ' + device.rssi),
+            devices.set(device.id, device.rssi);
             this.setState({
               count: this.state.count + 1,
             });
@@ -302,14 +271,11 @@ class HomeScreen extends Component {
             if (this.state.count > 20) {
               DeviceManager.stopDeviceScan();
 
-              // console.log(sMacArray);
               this.setState({
-                scannedMacArray: sayings,
+                scannedMacArray: devices,
               });
               //Fetch database beacon macs
               this.GetRealData();
-
-              // console.log(this.state.scannedMacArray);
             }
           }
         });
@@ -392,6 +358,8 @@ class HomeScreen extends Component {
       item: item,
     });
   }
+
+  //Function to render each item in flatlist
   renderItem = ({item}) => {
     // return <Item title={item.plate_no} />;
     return (
@@ -415,26 +383,23 @@ class HomeScreen extends Component {
   };
 
   render() {
+    //Dynamically fill picker
     let myUsers = this.state.busValues.map((myValue, myIndex) => {
       // console.log('myValue: ' + myValue.bus_service_no);
       return (
         <Picker.Item
           label={myValue.bus_service_no + ' - ' + myValue.plate_no}
-          value={myValue.bus_service_no + ' ' + myValue.plate_no}
+          value={
+            myValue.bus_service_no +
+            ' ' +
+            myValue.plate_no +
+            ' ' +
+            myValue.bus_id
+          }
           key={myIndex}
         />
       );
     });
-    // let plateNo = this.state.busValues.map((myValue, myIndex) => {
-    //   // console.log('myValue: ' + myValue.bus_service_no);
-    //   return (
-    //     <Picker.Item
-    //       label={myValue.plate_no}
-    //       value={myValue.plate_no}
-    //       key={myIndex}
-    //     />
-    //   );
-    // });
 
     return (
       <View style={styles.container}>
@@ -497,17 +462,21 @@ class HomeScreen extends Component {
                 width: 180,
               }}
               selectedValue={this.state.selectedValue}
-              onValueChange={(value) => this.setState({selectedValue: value})}>
+              onValueChange={(value) => {
+                console.log(value);
+                this.setState({selectedValue: value});
+              }}>
               {myUsers}
             </Picker>
 
             <TouchableOpacity
               style={styles.submitButton}
-              onPress={() =>
+              onPress={() => {
+                console.log(this.state.selectedValue);
                 this.props.navigation.navigate('SecondScreen', {
                   selectedValue: this.state.selectedValue,
-                })
-              }>
+                });
+              }}>
               <Text style={styles.submitButtonText}> Submit </Text>
             </TouchableOpacity>
             {/* <Picker
