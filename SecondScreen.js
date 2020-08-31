@@ -457,31 +457,46 @@ class SecondScreen extends Component {
         .then((response) => response.text())
         .then((result) => {
           var errorCount = this.state.insertErrorCounter;
-          // console.log('insert location', result);
-          var splittedLines = result.toString().split('<br>');
+          console.log('insert location', result);
 
           // console.log('splitted Lines', splittedLines[0]);
           // console.log(splittedLines[1].trim());
           // console.log('insert success');
           // console.log('splitted Lines', splittedLines[2]);
           // console.log(splittedLines[1].trim() == 'insert success');
-
           if (errorCount < 9) {
-            if (splittedLines[1].trim() === 'insert success') {
-              errorCount = 0;
-              console.log('INSERT SUCCESSS!!!!');
-            } else {
+            if (result === 'Too far from route') {
               console.log('TOO FARRRR');
               errorCount = errorCount + 1;
               this.setState({
                 insertErrorCounter: errorCount,
               });
+            } else {
+              var splittedLines = result.toString().split('<br>');
+              if (splittedLines[1].trim() === 'insert success') {
+                errorCount = 0;
+                console.log('INSERT SUCCESSS!!!!');
+              }
             }
-            console.log('ERROR COUNT: ', errorCount);
           } else {
             //If "too far from route" for 10 times already, exit App
             BackHandler.exitApp();
           }
+
+          // if (errorCount < 9) {
+          //   if (splittedLines[1].trim() === 'insert success') {
+          //     errorCount = 0;
+          //     console.log('INSERT SUCCESSS!!!!');
+          //   } else {
+          //     console.log('TOO FARRRR');
+          //     errorCount = errorCount + 1;
+          //     this.setState({
+          //       insertErrorCounter: errorCount,
+          //     });
+          //   }
+          //   console.log('ERROR COUNT: ', errorCount);
+          // } else {
+          // }
         })
         .catch((error) => console.log('error inserting location', error));
 
