@@ -157,26 +157,8 @@ class SecondScreen extends Component {
         // this.setState({busstop: data});
       })
       .catch((error) => console.log('error fetching determineRoute', error));
-
-    /*
-      https://laravelsyd-fypfinalver.herokuapp.com/determineRoute (bus_service, first_point, last_point)
-      mandatory fields: 
-      bus_service
-      first_point – e.g., 1.663453,103.3453 
-
-      Optional field: 
-      last_point – e.g., 1.663453,103.3453
-
-      If the last_point is NULL, then the server will determine whether the first_point is close to the Departure Terminal of the route.
-
-      If the returned route_id = -1, this means that the route cannot be determined.
-
-      Output: An object {bus_service_no, route_id}
-      {“bus_service_no”:“7”, “route_id”:1}
-      {“bus_service_no”:“7”, “route_id”:-1} 
-
-          */
   }
+
   getBuses() {
     console.log('get bus locations');
     const requestOptions = {
