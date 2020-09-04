@@ -39,7 +39,8 @@ def prep_dataset(file_dataset, new_file_location):
                 time = tdelta.strftime('%H:%M:%S')
                 
                 #Convert hour to seconds
-                duration = int(float(row["Duration(h)"]) * 3600)
+                # duration = int(float(row["Duration(h)"]) * 3600)
+                duration = int(float(row["Actual_Duration"]) * 3600)
                 
                 #5 digitformat
                 bus_stop_A = "{0:0=5d}".format(int(row["BS_A"]))
@@ -59,11 +60,11 @@ def prep_dataset(file_dataset, new_file_location):
             csvwriter.writerow(output)
     print("Completed")
 
-file_dataset = "output/BJM9017_12-1_4.csv" # Location of dataset to clean
+file_dataset = "output/BJA8742_12-1_2.csv" # Location of dataset to clean
         
 if path.exists(file_dataset) is True:
     # file_name = input("Save file as (include .csv) : ") # Save file location
-    file_name = "BJM9017_12-2_prep.csv"
+    file_name = "BJA8742_12-prep_1.csv"
     new_file_location = 'output/' + file_name
     prep_dataset(file_dataset, new_file_location)
 else:

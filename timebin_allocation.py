@@ -53,10 +53,10 @@ with open('output/test-output-2.csv' , mode='r' ,newline='') as input ,  open('o
 
 
     
-# if path.exists(file_dataset) is True:
-#     file_name = input("Save file as (include .csv) : ") # Save file location
-#     new_file_location = 'output/' + file_name
-#     calculate_nearestBS(file_dataset, new_file_location)
-# else:
-#     print("The file doesn't exisit")
+if path.exists(file_dataset) is True:
+    file_name = input("Save file as (include .csv) : ") # Save file location
+    new_file_location = 'output/' + file_name
+    calculate_nearestBS(file_dataset, new_file_location)
+else:
+    print("The file doesn't exisit")
 print("Completed")

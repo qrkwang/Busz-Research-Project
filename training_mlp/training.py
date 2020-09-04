@@ -1,6 +1,6 @@
 # first neural network with keras tutorial
 from numpy import loadtxt
-from keras.models import Sequential
+from tensorflow.keras.models import Sequential
 from keras.layers import Dense
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
@@ -47,7 +47,7 @@ def create_model(n_cols):
 	model.add(Dense(200, activation='relu'))
 
 	model.add(Dense(1, activation='relu'))
-  
+ 
 	return model
 
 def train_data(file_dataset, bus_service, model_path):
@@ -99,7 +99,6 @@ def train_data(file_dataset, bus_service, model_path):
   
 	model_path = './models/' + bus_service + '/' + model_path
 
-
 	#Scaler filename
 	inputscalerfile = './models/' + bus_service + '/input_scaler.sav'
 	outputscalerfile = './models/' + bus_service + '/output_scaler.sav'
@@ -124,11 +123,11 @@ def train_data(file_dataset, bus_service, model_path):
 	model = create_model(n_cols)
 
 	# compile the keras model
-	model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+	# opt = keras.optimizers.Adam(learning_rate=0.01)
+	model.compile(optimizer='adam', loss='mean_squared_error', metrics = ['mae'])
 
 	#Save model at checkpoint
 	checkpoint = ModelCheckpoint(model_path, monitor='loss', verbose=0, save_best_only=True, mode='min')
-
 
 	# fit the keras model on the dataset
 	try:
@@ -148,28 +147,23 @@ def train_data(file_dataset, bus_service, model_path):
 	train_score = model.evaluate(train_X, train_Y, verbose = 0)
 	test_score = model.evaluate(test_X, test_Y, verbose=0)
 
+	print('Bus Service', bus_service)
 	print('Train Accuracy' , train_score)
 	print('Test Accuracy', test_score)
 
-
 	print_evaluation(model, train_score, test_score, start_time)
-
-
+ 
 #Capture start time
 start_time = time.time()
 
 # file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
-file_dataset = "output/BJA8742_12-2_prep.csv"
+file_dataset = "output/BFV7518-prep_1.csv"
 
 if path.exists(file_dataset) is True:
     bus_service = input("Bus_Service : ") # Save file location
-    model_path = "test"
+    model_path = "model.hdf5"
     train_data(file_dataset, bus_service, model_path)
 else:
     print("The file doesn't exist")
     
-#https://machinelearningmastery.com/evaluate-skill-deep-learning-models/
-# train, test = split(data)
-# model = fit(train.X, train.y)
-# predictions = model.predict(test.X)
-# skill = compare(test.y, predictions)
+

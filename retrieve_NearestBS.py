@@ -1810,7 +1810,7 @@ def calculate_nearestBS(file_dataset, new_file_location):
     nearestBusStop = 0
     p = [] 
     
-    with open(file_dataset, mode='U', newline='') as csv_file:
+    with open(file_dataset, mode='U', newline='', encoding='utf-8-sig') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         line_count = 0    
         fieldnames = ['Vehicle_No', 'Date', 'Time', 'Location', 'Lat', 'Lng', 'Speed', 'Vehicle_Status', 'GPS',
@@ -1822,6 +1822,7 @@ def calculate_nearestBS(file_dataset, new_file_location):
             writer.writerow(fieldnames)
     
         for row in csv_reader:
+            print(row)
             nearest_stop.clear()
             nearest_polyline.clear()
             #strLat1 = row["Lat"]

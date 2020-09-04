@@ -211,11 +211,13 @@ def calculate_actual_duration(file_dataset, new_file_location):
                         tdelta = datetime.strptime(cal_time_A, FMT)  + timedelta(seconds=duration)  #Convert to date object
                         time = tdelta.strftime(FMT) 
                         
+                        # row_duration = datetime.strptime(time, FMT) - datetime.strptime(cal_time_A, FMT)
+                        # row["Duration(h)"] = row_duration.seconds /3600
+                        
                         if current_route - 1 == start_route:
                             row["Time_B"] = time
                             row["Lat_B"] = "-"
                             row["Lng_B"] = "-"
-                            
     
                             cal_time_A = time
                             
@@ -238,17 +240,16 @@ def calculate_actual_duration(file_dataset, new_file_location):
                             row["Lng_B"] = "-"
                             
                             cal_time_A = time
-
+                            
+                     
                         csvwriter.writerow(dict(row, Distance= data , Bus_Distance= bus_distance, Speed = speed, Actual_Duration = actual_duration, time_bin = time_bin))
             
     print("Completed")
 
-# file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
-file_dataset = "output/BJM9017_12-1_3.csv"
+file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
 
 if path.exists(file_dataset) is True:
-    # file_name = input("Save file as (include .csv) : ") # Save file location
-    file_name = "BJM9017_12-1_4.csv"
+    file_name = input("Save file as (include .csv) : ") # Save file location
     new_file_location = 'output/' + file_name
     calculate_actual_duration(file_dataset, new_file_location)
 else:

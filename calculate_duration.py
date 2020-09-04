@@ -165,13 +165,12 @@ def calculate_duration(file_dataset, new_file_location):
             # print("data point in csv", route, lat1, lon1)
     print("Successfully completed")
 
-# file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
+file_dataset = input("Enter the location of dataset to clean : ") # Location of dataset to clean
 
-# if path.exists(file_dataset) is True:
-#     file_name = input("Save file as (include .csv) : ") # Save file location
-#     new_file_location = 'output/' + file_name
-#     calculate_duration(file_dataset, new_file_location)
-# else:
-#     print("The file doesn't exisit")
+if path.exists(file_dataset) is True:
+    file_name = input("Save file as (include .csv) : ") # Save file location
+    new_file_location = 'output/' + file_name
+    calculate_duration(file_dataset, new_file_location)
+else:
+    print("The file doesn't exisit")
     
-calculate_duration("output/BJM9017_12-1_nearest_busstop.csv", "output/BJA9017_12-1_3.csv")

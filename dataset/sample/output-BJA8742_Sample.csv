@@ -1,0 +1,404 @@
+Vehicle_No,Date,Time,Location,Lat,Lng,Speed,Vehicle_Status,GPS,Distance-KM,Vehicle_Batt.-V,Route
+BJA8742,1/12/2018,3:41:09 PM,"24, Jalan Pinang, Taman Kota Kulai, Kulai, Johor",1.6683142,103.579473,50,Ignition on; Moving; ,GOOD,0.34,27.33,0
+BJA8742,1/12/2018,3:42:10 PM,"58, Jalan Pinang, Taman Kota Kulai, Kulai, Johor",1.6686055,103.5817089,0,Ignition on; Idling; ,GOOD,0.23,27.33,0
+BJA8742,1/12/2018,3:43:10 PM,"2, Jalan Pelanduk, Taman Pertama, Kulai, Johor",1.6693069,103.585454,50,Ignition on; Moving; ,GOOD,0.33,27.2,0
+BJA8742,1/12/2018,3:45:11 PM,"5, Jalan Susur Kulai 4, Taman Kulai Utama, Kulai, Johor",1.6658448,103.5927015,50,Ignition on; Moving; ,GOOD,0.95,26.68,0
+BJA8742,1/12/2018,3:46:11 PM,"64, Jalan Bunga Raya, Kulai, Kulai, Johor",1.6656974,103.588568,44.45,Ignition on; Moving; ,GOOD,0.98,27.2,0
+BJA8742,1/12/2018,3:47:11 PM,"PTB 1306 & PTB 1307, Jalan Tun Mutahir 1,Jalan Besar, Kulai, Johor,",1.6611634,103.6036642,9.26,Ignition on; Moving; ,GOOD,0.36,27.2,0
+BJA8742,1/12/2018,3:48:11 PM,"Jalan Besar, Taman Mewah, Kulai, Johor",1.6617842,103.6020086,16.67,Ignition on; Moving; ,GOOD,0.13,27.46,1
+BJA8742,1/12/2018,3:49:12 PM,"193 & 195, Batu 19, Kulai Besar, Kulai,, Kulai, Johor,",1.655537,103.609174,42.6,Ignition on; Moving; ,GOOD,0.72,26.94,1
+BJA8742,1/12/2018,3:50:12 PM,"19, Jalan Besar, Taman Kulai Besar, Kulai, Johor",1.653165,103.6097602,0,Ignition on; Idling; ,GOOD,0.29,27.33,1
+BJA8742,1/12/2018,3:51:12 PM,"No. 10, Jalan Susur Kulai 2, Taman Kulai Kulai Besar, Kulai,, Kulai, Johor,",1.6497348,103.6118347,29.63,Ignition on; Moving; ,GOOD,0.44,27.46,1
+BJA8742,1/12/2018,3:52:12 PM,"685, Jalan Susur Kulai 1, Taman Sri Kulai Baru, Kulai, Johor",1.6455138,103.616438,40.74,Ignition on; Moving; ,GOOD,0.67,26.81,1
+BJA8742,1/12/2018,3:53:13 PM,"799, Jalan Susur Kulai 1, Taman Sri Kulai Baru, Kulai, Johor",1.6436727,103.6198503,53.71,Ignition on; Moving; ,GOOD,0.5,27.2,1
+BJA8742,1/12/2018,3:54:13 PM,"9, Jalan Sri Putra 1, Bandar Putra Kulai, Kulai,, Kulai, Johor,",1.6399329,103.624771,0,Ignition on; Idling; ,GOOD,0.68,27.2,1
+BJA8742,1/12/2018,3:55:13 PM,"TJ Mart, 5035, Jalan Air Hitam, Saleng, Batu 17 1/2,, Senai, Johor",1.6667574,103.5881173,51.86,Ignition on; Moving; ,GOOD,0.58,27.33,1
+BJA8742,1/12/2018,3:56:13 PM,"1, Kulai, Johor",1.6627898,103.5996619,14.82,Ignition on; Moving; ,GOOD,0.59,27.2,1
+BJA8742,1/12/2018,3:57:14 PM,"1, Kulai, Johor",1.6627898,103.5996619,53.71,Ignition on; Moving; ,GOOD,0.32,27.33,1
+BJA8742,1/12/2018,3:58:14 PM,"1, Senai, Johor",1.6017462,103.6450745,59.26,Ignition on; Moving; ,GOOD,1.14,27.33,1
+BJA8742,1/12/2018,3:59:14 PM,"No 75 Kampung Baru, Senai, Johor",1.617094,103.646397,57.41,Ignition on; Moving; ,GOOD,0.95,26.94,1
+BJA8742,1/12/2018,4:00:00 PM,"158, Jalan Senai Utama 5/17, Taman Senai Utama, Senai, Johor",1.612388,103.6469769,0,Ignition on; Idling; ,GOOD,0.55,27.33,1
+BJA8742,1/12/2018,4:01:00 PM,"1765, Jalan Senai Utama 1/2, Taman Senai Utama, Senai,, Senai, Johor,",1.6104425,103.6471865,31.48,Ignition on; Moving; ,GOOD,0.36,27.46,1
+BJA8742,1/12/2018,4:02:00 PM,"Lebuhraya Senai, Senai, Johor, Malaysia,",1.6108732,103.6473734,5.56,Ignition on; Moving; ,GOOD,0.29,27.2,1
+BJA8742,1/12/2018,4:03:00 PM,"1, Taman Bahagia, Senai, Johor",1.5990708,103.6452738,9.26,Ignition on; Moving; ,GOOD,0.13,26.94,1
+BJA8742,1/12/2018,4:04:01 PM,"No 41 Jalan Raya, Senai, Senai Johor, Johor",1.6044374,103.6470801,11.11,Ignition on; Moving; ,GOOD,0.14,26.68,1
+BJA8742,1/12/2018,4:05:01 PM,"Caltex, Taman Bahagia, Senai, Johor",1.628586,103.6373018,27.78,Ignition on; Moving; ,GOOD,0.2,27.07,1
+BJA8742,1/12/2018,4:06:01 PM,"No 176-B, Jalan Belimbing 1, Johor, Senai",1.6000037,103.6449616,0,Ignition on; Idling; ,GOOD,0.35,26.81,1
+BJA8742,1/12/2018,4:07:01 PM,"No 176-B, Jalan Belimbing 1, Johor, Senai",1.6000037,103.6449616,0,Ignition on; Idling; ,GOOD,0,26.81,1
+BJA8742,1/12/2018,4:08:01 PM,"26, Jalan Impian Senai Utama, Taman Impian Senai, Senai, Johor",1.593748,103.6469279,55.56,Ignition on; Moving; ,GOOD,0.55,27.33,1
+BJA8742,1/12/2018,4:09:02 PM,"1, Senai, Johor",1.6017462,103.6450745,70.38,Ignition on; Moving; ,GOOD,1.08,26.94,1
+BJA8742,1/12/2018,4:10:02 PM,"1, Senai, Johor",1.6017462,103.6450745,81.49,Ignition on; Moving; ,GOOD,1.18,27.2,1
+BJA8742,1/12/2018,4:11:02 PM,"1, Senai, Johor",1.6017462,103.6450745,85.19,Ignition on; Moving; ,GOOD,1.36,26.94,1
+BJA8742,1/12/2018,4:12:03 PM,"1, Skudai, Skudai, Johor",1.5373801,103.6627222,64.82,Ignition on; Moving; ,GOOD,1.27,27.2,1
+BJA8742,1/12/2018,4:13:03 PM,"5710, Jalan Bertingkat Skudai, Skudai, Johor Bahru, Johor",1.5468519,103.6571623,42.6,Ignition on; Moving; ,GOOD,1.05,27.2,1
+BJA8742,1/12/2018,4:14:03 PM,"18, JaIan Dedap 15, Taman Johor Jaya, Johor Bahru,, Johor Bahru, Johor,",1.5426953,103.7999478,22.22,Ignition on; Moving; ,GOOD,0.35,27.33,1
+BJA8742,1/12/2018,4:15:03 PM,"Skudai Parade, 03-51, Jalan Skudai Batu 10, Skudai, Skudai, Johor",1.5408432,103.660337,16.67,Ignition on; Moving; ,GOOD,0.31,26.94,1
+BJA8742,1/12/2018,4:16:04 PM,"01-51 01-52 01-53, Jalan Skudai Batu 10, Skudai, Skudai, Johor",1.5415726,103.6599695,7.41,Ignition on; Moving; ,GOOD,0.16,26.43,1
+BJA8742,1/12/2018,4:17:04 PM,"No. 4233, Jalan SkudaiBatu 53/4, Johor, Johor Bahru",1.539338,103.66093,9.26,Ignition on; Moving; ,GOOD,0.16,27.2,1
+BJA8742,1/12/2018,4:18:04 PM,"No. 187C, Jalan Skudai, Batu 4 1/2, Skudai, Johor, Johor Bahru",1.487234,103.7145199,20.37,Ignition on; Moving; ,GOOD,0.14,26.55,1
+BJA8742,1/12/2018,4:19:04 PM,"83, Jalan Barau 2, Skudai, Skudai, Johor",1.5365646,103.6639902,14.82,Ignition on; Moving; ,GOOD,0.33,26.94,1
+BJA8742,1/12/2018,4:20:04 PM,"1, Jalan Haruan, Skudai, Skudai, Johor",1.5347664,103.664818,11.11,Ignition on; Moving; ,GOOD,0.2,27.07,1
+BJA8742,1/12/2018,4:21:05 PM,"Lot 04-27, Fourth Floor, Skudai Parade Shopping Complex, Jalan Skudai, Batu 10, Skudai,, Johor Bahru, Johor",1.5343463,103.6655109,0,Ignition on; Idling; ,GOOD,0.13,27.07,1
+BJA8742,1/12/2018,4:22:05 PM,"81300 No.6A,1st Floor,Jln Ronggeng Satu TMN Skudai Baru, Skudai Johor,",1.53208,103.667,0,Ignition on; Idling; ,GOOD,0.26,27.2,1
+BJA8742,1/12/2018,4:23:05 PM,"81300 No.6A,1st Floor,Jln Ronggeng Satu TMN Skudai Baru, Skudai Johor,",1.53208,103.667,0,Ignition on; Idling; ,GOOD,0,27.33,1
+BJA8742,1/12/2018,4:24:05 PM,"81300 No.6A,1st Floor,Jln Ronggeng Satu TMN Skudai Baru, Skudai Johor,",1.53208,103.667,11.11,Ignition on; Moving; ,GOOD,0.01,27.07,1
+BJA8742,1/12/2018,4:25:06 PM,"81300, 1-31, Jalan Shahbandar 3, Taman Ungku Tun Aminah, Skudai, Johor",1.530135,103.6687994,5.56,Ignition on; Moving; ,GOOD,0.37,26.94,1
+BJA8742,1/12/2018,4:26:06 PM,"No. 47, Jalan Shahbandar 3Taman Ungku Tun Aminah, Johor, Scudai",1.5299899,103.6708227,5.56,Ignition on; Moving; ,GOOD,0.12,27.2,1
+BJA8742,1/12/2018,4:27:06 PM,"8, Jalan Bertingkat Skudai, Taman Sri Putri, Johor Bahru, Johor",1.5286007,103.6706362,11.11,Ignition on; Moving; ,GOOD,0.13,27.2,1
+BJA8742,1/12/2018,4:28:06 PM,"jalan skudai, Skudai, Johor",1.5103164,103.68819,0,Ignition on; Idling; ,GOOD,0.03,27.2,1
+BJA8742,1/12/2018,4:29:07 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,14.82,Ignition on; Moving; ,GOOD,0.24,27.2,1
+BJA8742,1/12/2018,4:30:07 PM,"Xtra Super Centre, Jalan Skudai, Taman Impian Skudai, Johor, Skudai",1.525148,103.677071,31.48,Ignition on; Moving; ,GOOD,0.48,26.94,1
+BJA8742,1/12/2018,4:31:07 PM,"903, Jalan Bertingkat Skudai, Johor Bahru, Johor",1.5233901,103.6790844,0,Ignition on; Idling; ,GOOD,0.34,26.68,1
+BJA8742,1/12/2018,4:32:07 PM,"Lot 2353, Jalan Kempas Lama, Off Jalan Skudai,, Johor Bahru, Johor,",1.5221832,103.6799029,7.41,Ignition on; Moving; ,GOOD,0.18,26.94,1
+BJA8742,1/12/2018,4:33:08 PM,"2012, Jalan Skudai Lama, Taman Tampoi Indah 2, Johor Bahru, Johor",1.5184733,103.6811862,7.41,Ignition on; Moving; ,GOOD,0.17,26.81,1
+BJA8742,1/12/2018,4:34:08 PM,"46, Jalan Pertama 1, Taman Tampoi Indah 2, Skudai, Johor",1.5198135,103.680717,9.26,Ignition on; Moving; ,GOOD,0.17,26.94,1
+BJA8742,1/12/2018,4:35:08 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,16.67,Ignition on; Moving; ,GOOD,0.23,27.33,1
+BJA8742,1/12/2018,4:37:09 PM,"47, Jalan Tanjung, Taman Dato Penggawa Barat, Johor Bahru, Johor",1.5125953,103.6870056,18.52,Ignition on; Moving; ,GOOD,0.36,26.94,1
+BJA8742,1/12/2018,4:38:09 PM,"Lot CP3, Jalan Tanjung A/9, Pelabuhan Tanjung Pelepas,",1.3621673,103.5533946,20.37,Ignition on; Moving; ,GOOD,0.28,27.33,1
+BJA8742,1/12/2018,4:39:09 PM,"Jalan Skudai, Taman Dato Penggawa Barat, Taman Johor, Johor Bahru, Johor",1.5088287,103.6892902,0,Ignition on; Idling; ,GOOD,0.18,27.2,1
+BJA8742,1/12/2018,4:40:09 PM,"19, Jalan Pulai, Taman Johor, Johor Bahru, Johor",1.5084664,103.6898015,0,Ignition on; Idling; ,GOOD,0.03,27.33,1
+BJA8742,1/12/2018,4:41:10 PM,"29, Jalan Camah, Taman Johor, Johor Bahru, Johor",1.5079206,103.6900244,9.26,Ignition on; Moving; ,GOOD,0.14,26.81,1
+BJA8742,1/12/2018,4:42:10 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,24.08,Ignition on; Moving; ,GOOD,0.23,27.33,1
+BJA8742,1/12/2018,4:43:10 PM,"125, Batu 4 1/2, Jalan Skudai, Tampoi, Johor Bahru,, Johor Bahru, Johor,",1.4894258,103.7113599,53.71,Ignition on; Moving; ,GOOD,0.39,27.33,1
+BJA8742,1/12/2018,4:44:10 PM,"Mcdonalds, Kawasan Perusahaan Tampoi, Johor Bahru, Johor",1.5003491,103.6976884,40.74,Ignition on; Moving; ,GOOD,0.56,27.2,1
+BJA8742,1/12/2018,4:45:11 PM,"Jalan Skudai, Taman Tampoi, Taman Tampoi, Johor Bahru, Johor",1.4969544,103.7017436,0,Ignition on; Idling; ,GOOD,0.65,26.81,1
+BJA8742,1/12/2018,4:47:11 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,42.6,Ignition on; Moving; ,GOOD,0.52,27.33,1
+BJA8742,1/12/2018,4:48:11 PM,"76, Jalan Padi 1, Bandar Baru Uda, Johor Bahru, Johor",1.4902392,103.7112637,40.74,Ignition on; Moving; ,GOOD,0.44,27.33,1
+BJA8742,1/12/2018,4:50:12 PM,"52, Johor Bahru, Johor",1.4807643,103.7232295,68.52,Ignition on; Moving; ,GOOD,0.71,26.94,1
+BJA8742,1/12/2018,4:51:12 PM,"Danga Bay, Jalan Bertingkat Skudai, Danga Bay, Johor Bahru, Johor",1.4788471,103.72375,62.97,Ignition on; Moving; ,GOOD,1.03,27.07,1
+BJA8742,1/12/2018,4:53:13 PM,"376, Jalan Bertingkat Skudai, Johor Bahru, Johor",1.4622604,103.7319822,0,Ignition on; Idling; ,GOOD,0.74,26.55,1
+BJA8742,1/12/2018,4:54:13 PM,"Skudai Parade, No. 01-20/21, 1st Floor, Johor, Skudai",1.542076,103.6601039,74.08,Ignition on; Moving; ,GOOD,0.78,27.33,1
+BJA8742,1/12/2018,4:55:13 PM,"Jalan Skudai, berhampiran Hospital Sultanah Aminah, Johor",1.4568422,103.7477965,66.67,Ignition on; Moving; ,GOOD,1.15,27.2,1
+BJA8742,1/12/2018,4:56:13 PM,"103, Jalan Tun Dr Ismail, Johor Bahru, Johor",1.4550019,103.7529115,68.52,Ignition on; Moving; ,GOOD,0.7,27.07,1
+BJA8742,1/12/2018,4:57:14 PM,"Bus Stop Jalan Ibrahim, Jalan Ibrahim, Bandar Johor Bahru, Johor Bahru, Johor",1.4555143,103.7618528,0,Ignition on; Idling; ,GOOD,0.89,27.2,1
+BJA8742,1/12/2018,4:58:14 PM,"jalan segget, Johor Bahru, Johor",1.4583455,103.7647484,12.96,Ignition on; Moving; ,GOOD,0.48,26.94,1
+BJA8742,1/12/2018,4:59:14 PM,"52, Bandar Johor Bahru, Johor Bahru, Johor",1.4551135,103.7606708,18.52,Ignition on; Moving; ,GOOD,0.28,26.68,1
+BJA8742,1/12/2018,5:00:00 PM,"154, Jalan Lumba Kuda, Bukit Chagar, Johor Bahru, Johor",1.4603191,103.7673001,0,Ignition on; Idling; ,GOOD,0.07,26.94,1
+BJA8742,1/12/2018,5:01:00 PM,"154, Jalan Lumba Kuda, Bukit Chagar, Johor Bahru, Johor",1.4603191,103.7673001,0,Ignition on; Idling; ,GOOD,0.02,27.2,1
+BJA8742,1/12/2018,5:02:00 PM,"81, Jalan Jim Quee, Bukit Chagar, Johor Bahru, Johor",1.4612439,103.7664268,3.7,Ignition on; Idling; ,GOOD,0.14,26.81,1
+BJA8742,1/12/2018,5:03:00 PM,"81, Jalan Jim Quee, Bukit Chagar, Johor Bahru, Johor",1.4612439,103.7664268,0,Ignition on; Idling; ,GOOD,0.06,27.33,1
+BJA8742,1/12/2018,5:04:01 PM,"81, Jalan Jim Quee, Bukit Chagar, Johor Bahru, Johor",1.4612439,103.7664268,0,Ignition on; Idling; ,GOOD,0.01,26.94,1
+BJA8742,1/12/2018,5:05:01 PM,"81, Jalan Jim Quee, Bukit Chagar, Johor Bahru, Johor",1.4612439,103.7664268,0,Ignition on; Idling; ,GOOD,0.02,26.94,1
+BJA8742,1/12/2018,5:06:01 PM,"2020, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4618679,103.7652262,0,Ignition on; Idling; ,GOOD,0.02,27.2,1
+BJA8742,1/12/2018,5:07:01 PM,"No. 6B, Jalan Quee, Johor, Johor Bahru",1.4647358,103.7642691,9.26,Ignition on; Moving; ,GOOD,0.13,27.33,1
+BJA8742,1/12/2018,5:08:01 PM,"JB Sentral, Jalan Tun Abdul Razak, Bandar Johor Bahru, Johor Bahru, Johor",1.462983,103.7646849,0,Ignition on; Idling; ,GOOD,0.03,26.94,2
+BJA8742,1/12/2018,5:36:08 PM,"Bus Stop Jalan Ibrahim, Jalan Ibrahim, Bandar Johor Bahru, Johor Bahru, Johor",1.4555143,103.7618528,46.3,Ignition on; Moving; ,GOOD,0.46,27.33,2
+BJA8742,1/12/2018,5:38:09 PM,"52, Johor Bahru, Johor",1.4807643,103.7232295,38.89,Ignition on; Moving; ,GOOD,0.7,27.33,2
+BJA8742,1/12/2018,5:39:09 PM,"52, Johor Bahru, Johor",1.4807643,103.7232295,46.3,Ignition on; Moving; ,GOOD,0.47,27.07,2
+BJA8742,1/12/2018,5:40:09 PM,"80, Jalan Sungai Chat, Kampung Mohd Amin, Johor Bahru, Johor",1.4600959,103.7384821,37.04,Ignition on; Moving; ,GOOD,0.69,27.07,2
+BJA8742,1/12/2018,5:41:09 PM,"Kompleks Lien Hoe, Block A & B, Jalan Sutera, Taman Sentosa, Johor, Skudai",1.4920838,103.7689788,48.15,Ignition on; Moving; ,GOOD,0.57,27.2,2
+BJA8742,1/12/2018,5:44:10 PM,"Lot 20704, Jalan Skudai, Batu 4 1/2, Johor, Johor Bahru",1.5423729,103.656632,40.74,Ignition on; Moving; ,GOOD,0.74,26.94,2
+BJA8742,1/12/2018,5:45:10 PM,"34, Jalan Kolam Air, Taman Tasek, Johor Bahru, Johor",1.4829719,103.7212714,44.45,Ignition on; Moving; ,GOOD,0.62,26.55,2
+BJA8742,1/12/2018,5:46:11 PM,"No. 30, Jalan Padi Ria 13, Bandar Baru Uda, Johor, Tampoi, Johor Bahru",1.4992757,103.7183162,37.04,Ignition on; Moving; ,GOOD,0.67,27.33,2
+BJA8742,1/12/2018,5:47:11 PM,"No. 27-A, Bangunan Rapeah, Batu 6, Jalan Skudai, Tampoi, Johor, Johor Bharu",1.489059,103.712525,16.67,Ignition on; Moving; ,GOOD,0.49,27.2,2
+BJA8742,1/12/2018,5:48:11 PM,"No. 5944, Jalan Skudai, Johor, Johor Bharu",1.5468536,103.6571872,35.19,Ignition on; Moving; ,GOOD,0.38,26.81,2
+BJA8742,1/12/2018,5:49:11 PM,"19, Jalan Bertingkat Skudai, Johor Bahru, Johor",1.465939,103.7287766,38.89,Ignition on; Moving; ,GOOD,0.68,27.33,2
+BJA8742,1/12/2018,5:50:12 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,0,Ignition on; Idling; ,GOOD,0.53,27.07,2
+BJA8742,1/12/2018,5:51:12 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,33.34,Ignition on; Moving; ,GOOD,0.29,27.2,2
+BJA8742,1/12/2018,5:52:12 PM,"3, Jalan Kedondong, Batu 6, Johor Bahru, Johor",1.5006852,103.6952274,20.37,Ignition on; Moving; ,GOOD,0.44,27.33,2
+BJA8742,1/12/2018,5:53:12 PM,"No 1, Jalan Rantai 1 Off Lorong 1, Taman Kobena, Johor, Johor Bahru",1.502751,103.694141,33.34,Ignition on; Moving; ,GOOD,0.4,27.2,2
+BJA8742,1/12/2018,5:54:13 PM,"187 C & D, Batu 4 1/2, Jalan Skudai, Tampoi,, Johor Bahru, Johor,",1.487234,103.7145199,24.08,Ignition on; Moving; ,GOOD,0.55,27.2,2
+BJA8742,1/12/2018,5:55:13 PM,"Jalan Skudai, Taman Dato Penggawa Barat, Taman Tampoi Indah, Skudai, Johor",1.5080401,103.6893318,0,Ignition on; Idling; ,GOOD,0.21,27.07,2
+BJA8742,1/12/2018,5:56:13 PM,"12, Jalan Tanjung, Taman Dato Penggawa Barat, Johor Bahru, Johor",1.5105176,103.6883772,29.63,Ignition on; Moving; ,GOOD,0.26,27.07,2
+BJA8742,1/12/2018,5:57:13 PM,"18, Jalan Mewah Ria 1/4, Taman Bukit Mewah, Johor Bahru, Johor",1.5141523,103.6849884,29.63,Ignition on; Moving; ,GOOD,0.55,27.2,2
+BJA8742,1/12/2018,5:59:14 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,35.19,Ignition on; Moving; ,GOOD,0.35,27.46,2
+BJA8742,1/12/2018,6:00:00 PM,"lot 2788,batu off, Jalan Kempas Lama, Johor Bahru, Johor, Malaysia, Johor Bahru, Johor",1.5453551,103.7031222,38.89,Ignition on; Moving; ,GOOD,0.48,27.07,2
+BJA8742,1/12/2018,6:01:00 PM,"No 47, Jalan NJM 1/1, Taman Jaya Mas, Skudai,, Johor Bahru, Johor,",1.4988003,103.6486626,40.74,Ignition on; Moving; ,GOOD,0.71,26.94,2
+BJA8742,1/12/2018,6:03:00 PM,"No 6, Jalan Ekoperniagaan 1/7, Taman Ekoperniagaan, Johor Bahru, Johor",1.5788648,103.722667,37.04,Ignition on; Moving; ,GOOD,0.13,27.59,2
+BJA8742,1/12/2018,6:04:01 PM,"No. 10, Jalan Skudai Bt 81/2, Johor, Skudai",1.5339276,103.6654097,51.86,Ignition on; Moving; ,GOOD,0.76,27.07,2
+BJA8742,1/12/2018,6:05:01 PM,"No.169, Jalan Skudai, Johor, Johor Bahru",1.5103164,103.68819,40.74,Ignition on; Moving; ,GOOD,0.78,27.2,2
+BJA8742,1/12/2018,6:06:01 PM,"01-51 01-52 01-53, Jalan Skudai Batu 10, Skudai, Skudai, Johor",1.5415726,103.6599695,37.04,Ignition on; Moving; ,GOOD,0.34,27.33,2
+BJA8742,1/12/2018,6:07:01 PM,"18, Jalan Besi 1, Taman Sri Putri, Skudai, Johor",1.5422273,103.6575245,0,Ignition on; Idling; ,GOOD,0.46,27.07,2
+BJA8742,1/12/2018,6:08:01 PM,"18, Jalan Besi 1, Taman Sri Putri, Skudai, Johor",1.5422273,103.6575245,0,Ignition on; Idling; ,GOOD,0,27.2,2
+BJA8742,1/12/2018,6:09:02 PM,"1, Skudai, Skudai, Johor",1.5373801,103.6627222,77.78,Ignition on; Moving; ,GOOD,0.84,27.07,2
+BJA8742,1/12/2018,6:10:02 PM,"1, Skudai, Skudai, Johor",1.5373801,103.6627222,57.41,Ignition on; Moving; ,GOOD,1.17,27.33,2
+BJA8742,1/12/2018,6:11:02 PM,"1, Senai, Johor",1.6017462,103.6450745,81.49,Ignition on; Moving; ,GOOD,1.12,27.33,2
+BJA8742,1/12/2018,6:12:03 PM,"1, Senai, Johor",1.6017462,103.6450745,75.93,Ignition on; Moving; ,GOOD,1.3,27.2,2
+BJA8742,1/12/2018,6:13:03 PM,"Lorry & Tractor Workshop, Taman Aman, Senai, Johor",1.5888376,103.6477129,57.41,Ignition on; Moving; ,GOOD,0.95,26.94,2
+BJA8742,1/12/2018,6:14:03 PM,"Jalan Impiana Senai Utama 2, Taman Impian Senai, Senai, Johor",1.592838,103.647417,9.26,Ignition on; Moving; ,GOOD,0.47,27.07,2
+BJA8742,1/12/2018,6:15:03 PM,"9, Jalan Impian Senai Utama, Taman Impian Senai, Senai, Johor",1.5926407,103.6462658,20.37,Ignition on; Moving; ,GOOD,0.19,27.46,2
+BJA8742,1/12/2018,6:16:03 PM,"No. 40 &, Jalan Impian Senai 4 & Jalan Impian Senai Utama, Taman Impian Senai, Senai, Johor",1.5961856,103.6457139,11.11,Ignition on; Moving; ,GOOD,0.24,26.81,2
+BJA8742,1/12/2018,6:17:04 PM,"157, Jalan Bahagia, Taman Bahagia, Senai, Johor",1.5987879,103.6466866,16.67,Ignition on; Moving; ,GOOD,0.27,27.2,2
+BJA8742,1/12/2018,6:18:04 PM,"12, Jalan Belimbing, Main Road, Senai,, Senai, Johor,",1.6002938,103.6445669,0,Ignition on; Idling; ,GOOD,0.17,26.94,2
+BJA8742,1/12/2018,6:19:04 PM,"38, Lebuhraya Senai, Senai, Johor",1.6032508,103.6462191,40.74,Ignition on; Moving; ,GOOD,0.37,27.07,2
+BJA8742,1/12/2018,6:20:04 PM,"1762, Jalan Senai Utama 1/2, Taman Senai Utama, Senai,, Senai, Johor,",1.6102759,103.6471845,42.6,Ignition on; Moving; ,GOOD,0.61,27.33,2
+BJA8742,1/12/2018,6:21:05 PM,"122, Jalan Senai Utama 5/17, Taman Senai Utama, Senai, Johor",1.6132566,103.6469544,24.08,Ignition on; Moving; ,GOOD,0.52,26.55,2
+BJA8742,1/12/2018,6:22:05 PM,"1, Senai, Johor",1.6017462,103.6450745,62.97,Ignition on; Moving; ,GOOD,0.87,27.07,2
+BJA8742,1/12/2018,6:23:05 PM,"Lot 2560, Lebuhraya Senai, Taman Selang Jaya, Senai, Johor",1.6276444,103.6387999,35.19,Ignition on; Moving; ,GOOD,1,27.2,2
+BJA8742,1/12/2018,6:24:06 PM,"12, Jalan Jelawat, Taman Sri Saleng, Kulai, Johor",1.6284953,103.6357808,18.52,Ignition on; Moving; ,GOOD,0.23,26.68,2
+BJA8742,1/12/2018,6:25:06 PM,"No. 3662, Jalan Saleng, Batu 16 1/2,, Senai, Johor, Senai",1.6316128,103.6342224,9.26,Ignition on; Moving; ,GOOD,0.5,27.07,2
+BJA8742,1/12/2018,6:26:06 PM,"81400 Lot No. K48, TJ Mart BT 17 1/2 Jalan Air Hitam, Saleng Senai Johor",1.631681,103.631381,14.82,Ignition on; Moving; ,GOOD,0.22,26.94,2
+BJA8742,1/12/2018,6:27:06 PM,"81000, 1, Taman Pancasila, Kulai, Johor",1.6349582,103.6307453,11.11,Ignition on; Moving; ,GOOD,0.13,26.55,2
+BJA8742,1/12/2018,6:28:06 PM,"81000, 1, Taman Pancasila, Kulai, Johor",1.6349582,103.6307453,0,Ignition on; Idling; ,GOOD,0.14,26.94,2
+BJA8742,1/12/2018,6:29:07 PM,"9, Jalan Cermai 1, Taman Mesra, Senai, Johor",1.635498,103.629512,37.04,Ignition on; Moving; ,GOOD,0.25,27.33,2
+BJA8742,1/12/2018,6:30:07 PM,"Jalan Kulai - Senai, Hospital Kulaijaya, Kulai, Johor",1.6393859,103.6247424,14.82,Ignition on; Moving; ,GOOD,0.59,27.2,2
+BJA8742,1/12/2018,6:31:07 PM,"38, Jalan Kenanga 29/3, Bandar Indahpura, Kulai, Johor",1.6421802,103.6204639,68.52,Ignition on; Moving; ,GOOD,0.56,27.07,2
+BJA8742,1/12/2018,6:32:07 PM,"1, Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6403745,103.6236465,31.48,Ignition on; Moving; ,GOOD,0.76,26.55,2
+BJA8742,1/12/2018,6:33:08 PM,"255, Jalan Susur Kulai 1, Taman Sri Kulai Baru, Kulai, Johor",1.6484134,103.6131929,0,Ignition on; Idling; ,GOOD,0.37,26.55,2
+BJA8742,1/12/2018,6:34:08 PM,"Jalan Susur Kulai 1 Jalan Besar, 2, Batu 19.5, Kulai",1.6491265,103.6121488,18.52,Ignition on; Moving; ,GOOD,0.15,26.81,2
+BJA8742,1/12/2018,6:35:08 PM,"34, Jalan Susur Kulai 2, Kulai Besar, Kulai, Johor",1.650306,103.6112918,12.96,Ignition on; Moving; ,GOOD,0.18,26.68,2
+BJA8742,1/12/2018,6:36:08 PM,"81000 31-14 &amp; 31-15 Jalan Susur Kulai 1 Kulai Besar Kulai Johor,",1.6505314,103.611871,0,Ignition on; Idling; ,GOOD,0.06,26.94,2
+BJA8742,1/12/2018,6:37:09 PM,"Sbs Motor Trading, Taman Kulai Besar, Kulai, Johor",1.6540207,103.6094581,12.96,Ignition on; Moving; ,GOOD,0.36,26.55,2
+BJA8742,1/12/2018,6:38:09 PM,"155, Jalan Susur Kulai 3, Taman Sri Kulai Baru, Kulai, Johor",1.659329,103.6059412,35.19,Ignition on; Moving; ,GOOD,0.72,27.2,2
+BJA8742,1/12/2018,6:39:09 PM,"1E, Jalan Besar Kulai, Kulai,, Kulai, Johor,",1.6458539,103.6158015,7.41,Ignition on; Moving; ,GOOD,0.29,27.2,2
+BJA8742,1/12/2018,6:40:09 PM,"1E, Jalan Besar Kulai, Kulai,, Kulai, Johor,",1.6458539,103.6158015,16.67,Ignition on; Moving; ,GOOD,0.01,26.94,2
+BJA8742,1/12/2018,6:41:10 PM,"No. B-123, Felda Bukit Ramun, Johor,",1.662565,103.599772,20.37,Ignition on; Moving; ,GOOD,0.48,27.33,2
+BJA8742,1/12/2018,6:42:10 PM,"Terminal Bas Kulai, Taman Kulai, Kulai, Johor",1.6626225,103.5988947,0,Ignition on; Idling; ,GOOD,0.11,26.68,2
+BJA8742,1/12/2018,6:43:10 PM,"Terminal Bas Kulai, Taman Kulai, Kulai, Johor",1.6626225,103.5988947,0,Ignition on; Idling; ,GOOD,0,26.94,0
+BJA8742,1/12/2018,6:44:10 PM,"Terminal Bas Kulai, Taman Kulai, Kulai, Johor",1.6626225,103.5988947,0,Ignition on; Idling; ,GOOD,0,27.07,0
+BJA8742,1/12/2018,6:45:11 PM,"Terminal Bas Kulai, Taman Kulai, Kulai, Johor",1.6626225,103.5988947,0,Ignition on; Idling; ,GOOD,0,27.2,0
+BJA8742,1/12/2018,6:46:11 PM,"Terminal Bas Kulai, Taman Kulai, Kulai, Johor",1.6626225,103.5988947,0,Ignition on; Idling; ,GOOD,0,27.07,0
+BJA8742,1/12/2018,6:47:11 PM,"Terminal Bas Kulai, Taman Kulai, Kulai, Johor",1.6626225,103.5988947,0,Ignition on; Idling; ,GOOD,0.01,26.81,1
+BJA8742,1/12/2018,6:48:11 PM,"No. B-123, Felda Bukit Ramun, Johor,",1.662565,103.599772,14.82,Ignition on; Moving; ,GOOD,0.11,26.81,1
+BJA8742,1/12/2018,6:49:12 PM,"Jalan Besar, Taman Kulai, Kulai, Johor",1.662109,103.6011171,3.7,Ignition on; Idling; ,GOOD,0.03,26.94,1
+BJA8742,1/12/2018,6:50:12 PM,"73, Jalan Besar, Taman Mewah, Kulai, Johor",1.6621724,103.6013404,0,Ignition on; Idling; ,GOOD,0.12,26.94,1
+BJA8742,1/12/2018,6:51:12 PM,"78, Main Road, Kulai,, Kulai, Johor",1.6620404,103.6014326,0,Ignition on; Idling; ,GOOD,0.01,26.81,1
+BJA8742,1/12/2018,6:52:12 PM,"28, Kulai Besar,, Kulai, Johor,",1.651067,103.611138,0,Ignition on; Idling; ,GOOD,0.23,27.07,1
+BJA8742,1/12/2018,6:53:13 PM,"No.13, 14 & 15, Jalan Raya, Taman Kulai, Kulai, Johor",1.6610563,103.6033859,16.67,Ignition on; Moving; ,GOOD,0.03,26.81,1
+BJA8742,1/12/2018,6:54:13 PM,"4, Jalan Besar, Taman Kulai, Kulai, Johor",1.6607304,103.603972,9.26,Ignition on; Moving; ,GOOD,0.11,26.81,1
+BJA8742,1/12/2018,6:55:13 PM,"Jalan Besar, Taman Mewah, Kulai, Johor",1.6617842,103.6020086,16.67,Ignition on; Moving; ,GOOD,0.12,26.94,1
+BJA8742,1/12/2018,6:56:13 PM,"No 137, Jalan Susur Kulai 3, Taman Kulai Besar, Kulai, Johor",1.6600167,103.6052887,0,Ignition on; Idling; ,GOOD,0.03,26.68,1
+BJA8742,1/12/2018,6:57:13 PM,"No. 52-C, Jalan Besar, Kampung Bahagia, Kulai, Johor, Johor Bahru",1.6583404,103.607626,44.45,Ignition on; Moving; ,GOOD,0.41,27.2,1
+BJA8742,1/12/2018,6:58:14 PM,"Kulai Besar, Taman Kulai Besar, Kulai, Johor",1.650649,103.6097842,22.22,Ignition on; Moving; ,GOOD,0.52,27.2,1
+BJA8742,1/12/2018,6:59:14 PM,"19, Jalan Besar, Taman Kulai Besar, Kulai, Johor",1.653165,103.6097602,0,Ignition on; Idling; ,GOOD,0.1,27.07,1
+BJA8742,1/12/2018,7:00:01 PM,"31-9, Susur 1, Taman Seraya, Jalan 81000, Jalan Besar, Kulai Besar, Kulai, Johor",1.6509718,103.6115143,14.82,Ignition on; Moving; ,GOOD,0.28,26.3,1
+BJA8742,1/12/2018,7:01:01 PM,"255, Jalan Susur Kulai 1, Taman Sri Kulai Baru, Kulai, Johor",1.6484134,103.6131929,29.63,Ignition on; Moving; ,GOOD,0.39,27.33,1
+BJA8742,1/12/2018,7:02:01 PM,"Pekan Nanas No. 3, Jalan Besar,",1.5077042,103.5103496,51.86,Ignition on; Moving; ,GOOD,0.67,26.94,1
+BJA8742,1/12/2018,7:03:00 PM,"13a, Jalan Seri Putra 1, Bandar Putra, Kulai, Johor",1.6401439,103.6245598,37.04,Ignition on; Moving; ,GOOD,0.84,26.43,1
+BJA8742,1/12/2018,7:04:02 PM,"1157, Jalan Kasturi 36/41, Asiatic Indahpura Car City, Kulai, Johor",1.6369842,103.6271396,48.15,Ignition on; Moving; ,GOOD,0.52,27.33,1
+BJA8742,1/12/2018,7:05:02 PM,"28, Jalan Cermai 1, Taman Mesra, Saleng Senai,, Johor Bahru, Johor,",1.6349301,103.6301941,9.26,Ignition on; Moving; ,GOOD,0.31,26.81,1
+BJA8742,1/12/2018,7:06:02 PM,"81000, 1, Taman Pancasila, Kulai, Johor",1.6349582,103.6307453,18.52,Ignition on; Moving; ,GOOD,0.29,26.81,1
+BJA8742,1/12/2018,7:07:01 PM,"Petronas, Kampung Baru Saleng, Senai, Johor",1.6313023,103.6344033,53.71,Ignition on; Moving; ,GOOD,0.43,27.2,1
+BJA8742,1/12/2018,7:08:03 PM,"1, Senai, Johor",1.6017462,103.6450745,64.82,Ignition on; Moving; ,GOOD,1.17,27.07,1
+BJA8742,1/12/2018,7:09:03 PM,"No 75 Kampung Baru, Senai, Johor",1.617094,103.646397,62.97,Ignition on; Moving; ,GOOD,0.98,26.55,1
+BJA8742,1/12/2018,7:10:03 PM,"No. 4613 Batu 13 1/4, Senai Highway, Taman Aman, Johor, Senai",1.6019293,103.6451531,57.41,Ignition on; Moving; ,GOOD,0.99,27.07,1
+BJA8742,1/12/2018,7:11:02 PM,"38, Lebuhraya Senai, Senai, Johor",1.6032508,103.6462191,27.78,Ignition on; Moving; ,GOOD,0.61,26.94,1
+BJA8742,1/12/2018,7:12:04 PM,"No 176-B, Jalan Belimbing 1, Johor, Senai",1.6000037,103.6449616,1.85,Ignition on; Idling; ,GOOD,0.35,26.81,1
+BJA8742,1/12/2018,7:13:04 PM,"No 176-B, Jalan Belimbing 1, Johor, Senai",1.6000037,103.6449616,0,Ignition on; Idling; ,GOOD,0,26.81,1
+BJA8742,1/12/2018,7:14:04 PM,"No 176-B, Jalan Belimbing 1, Johor, Senai",1.6000037,103.6449616,0,Ignition on; Idling; ,GOOD,0,27.2,1
+BJA8742,1/12/2018,7:15:03 PM,"26, Jalan Impian Senai Utama, Taman Impian Senai, Senai, Johor",1.593748,103.6469279,59.26,Ignition on; Moving; ,GOOD,0.53,27.33,1
+BJA8742,1/12/2018,7:16:05 PM,"Lot 4646, Lebuhraya Senai, Kampung Jaya Sepakat, Senai, Johor",1.587772,103.6487239,61.12,Ignition on; Moving; ,GOOD,1.03,26.81,1
+BJA8742,1/12/2018,7:17:05 PM,"1, Senai, Johor",1.6017462,103.6450745,61.12,Ignition on; Moving; ,GOOD,0.9,26.81,1
+BJA8742,1/12/2018,7:18:05 PM,"1, Senai, Johor",1.6017462,103.6450745,61.12,Ignition on; Moving; ,GOOD,1.06,26.94,1
+BJA8742,1/12/2018,7:19:04 PM,"1, Skudai, Skudai, Johor",1.5373801,103.6627222,75.93,Ignition on; Moving; ,GOOD,1.1,27.2,1
+BJA8742,1/12/2018,7:20:06 PM,"1, Skudai, Skudai, Johor",1.5373801,103.6627222,70.38,Ignition on; Moving; ,GOOD,1.23,27.2,1
+BJA8742,1/12/2018,7:21:06 PM,"Jalan Skudai, Taman Jaya, Taman Jaya, Skudai, Johor",1.5445673,103.6577771,0,Ignition on; Idling; ,GOOD,0.85,26.55,1
+BJA8742,1/12/2018,7:22:06 PM,"Skudai Parade, No.04-12, Level 4, Jalan Skudai, Johor, Johor Bahru",1.4682162,103.7265459,29.63,Ignition on; Moving; ,GOOD,0.35,27.07,1
+BJA8742,1/12/2018,7:23:05 PM,"04-09, Parade complex, batu, 10, Jalan Bertingkat Skudai, Skudai, Skudai, Johor",1.54176,103.6600661,0,Ignition on; Idling; ,GOOD,0.12,26.81,1
+BJA8742,1/12/2018,7:24:07 PM,"No. 4233, Jalan SkudaiBatu 53/4, Johor, Johor Bahru",1.539338,103.66093,31.48,Ignition on; Moving; ,GOOD,0.21,27.2,1
+BJA8742,1/12/2018,7:25:07 PM,"Mobil, Taman Nesa, Johor Bahru, Johor",1.527004,103.6540595,66.67,Ignition on; Moving; ,GOOD,0.9,27.33,1
+BJA8742,1/12/2018,7:26:07 PM,"8, Jalan Bertingkat Skudai, Taman Sri Putri, Johor Bahru, Johor",1.5286007,103.6706362,0,Ignition on; Idling; ,GOOD,0.77,26.43,1
+BJA8742,1/12/2018,7:27:06 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,31.48,Ignition on; Moving; ,GOOD,0.37,27.2,1
+BJA8742,1/12/2018,7:28:08 PM,"Lot 1283, Jalan Roda Utama, Johor Bahru, Johor",1.5239339,103.6778829,37.04,Ignition on; Moving; ,GOOD,0.52,27.07,1
+BJA8742,1/12/2018,7:29:08 PM,"8, Jalan Bertingkat Skudai, Johor Bahru, Johor",1.5286007,103.6706362,14.82,Ignition on; Moving; ,GOOD,0.37,26.94,1
+BJA8742,1/12/2018,7:30:08 PM,"46, Jalan Pertama 1, Taman Tampoi Indah 2, Skudai, Johor",1.5198135,103.680717,5.56,Ignition on; Moving; ,GOOD,0.18,26.68,1
+BJA8742,1/12/2018,7:31:07 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,25.93,Ignition on; Moving; ,GOOD,0.31,27.2,1
+BJA8742,1/12/2018,7:32:09 PM,"Lot 54, Giant Tampoi, Jalan Skudai, Johor, Johor Bahru",1.4990467,103.7003461,16.67,Ignition on; Moving; ,GOOD,0.46,26.81,1
+BJA8742,1/12/2018,7:33:09 PM,"4F-49, Level 4, Paradigm Mall, Taman Bukit Mewah, Johor Bahru, Johor",1.513246,103.6863117,29.63,Ignition on; Moving; ,GOOD,0.19,27.07,1
+BJA8742,1/12/2018,7:34:09 PM,"Jalan Skudai, Taman Dato Penggawa Barat, Taman Johor, Johor Bahru, Johor",1.5088287,103.6892902,0,Ignition on; Idling; ,GOOD,0.61,27.07,1
+BJA8742,1/12/2018,7:35:08 PM,"Jalan Skudai, Taman Dato Penggawa Barat, Taman Johor, Johor Bahru, Johor",1.5088287,103.6892902,0,Ignition on; Idling; ,GOOD,0,27.07,1
+BJA8742,1/12/2018,7:36:08 PM,"Jalan Skudai, Taman Dato Penggawa Barat, Taman Tampoi Indah, Skudai, Johor",1.5080401,103.6893318,12.96,Ignition on; Moving; ,GOOD,0.14,27.33,1
+BJA8742,1/12/2018,7:37:10 PM,"Lot 13309, Jalan Skudai, Johor Bahru, Johor,",1.5003491,103.6976884,31.48,Ignition on; Moving; ,GOOD,0.28,26.94,1
+BJA8742,1/12/2018,7:38:10 PM,"NO 34 C, Jalan Kedondong, Kampung Pasir, Johor Bahru, Johor",1.5011697,103.6949033,40.74,Ignition on; Moving; ,GOOD,0.65,27.2,1
+BJA8742,1/12/2018,7:39:09 PM,"2014, Jalan Mempelam, Taman Tampoi, Johor Bahru, Johor",1.4994155,103.6986991,53.71,Ignition on; Moving; ,GOOD,0.43,27.2,1
+BJA8742,1/12/2018,7:40:11 PM,"Jalan Skudai, Taman Tampoi, Taman Tampoi, Johor Bahru, Johor",1.4969544,103.7017436,20.37,Ignition on; Moving; ,GOOD,0.52,27.07,1
+BJA8742,1/12/2018,7:41:11 PM,"No. 13, Jalan Skudai, Tampoi, Johor",1.4640641,103.7305645,0,Ignition on; Idling; ,GOOD,0.55,26.55,1
+BJA8742,1/12/2018,7:42:11 PM,"Wisma S K Teo, No. 84 & 86,, Jalan Padi 1, Bandar Baru Uda, Johor Bahru, Johor",1.490488,103.711097,46.3,Ignition on; Moving; ,GOOD,0.69,27.07,1
+BJA8742,1/12/2018,7:43:10 PM,"No 74, Ground Floor, Jalan Padi 1, Bandar Baru Uda, Johor Bahru, Johor",1.4894637,103.7132924,12.96,Ignition on; Moving; ,GOOD,0.14,27.2,1
+BJA8742,1/12/2018,7:44:12 PM,"No. 30, Jalan Padi Ria 13, Bandar Baru Uda, Johor, Tampoi, Johor Bahru",1.4992757,103.7183162,46.3,Ignition on; Moving; ,GOOD,0.63,26.94,1
+BJA8742,1/12/2018,7:45:12 PM,"No. 31-B, Lot 1744, Jln Skudai, Batu 3 3/4, Johor Bahru, Johor",1.480036,103.723802,53.71,Ignition on; Moving; ,GOOD,1.11,26.94,1
+BJA8742,1/12/2018,7:46:12 PM,"59, Jalan Waspada, Strait View, Johor Bahru, Johor",1.4710863,103.7261121,77.78,Ignition on; Moving; ,GOOD,1.09,27.07,1
+BJA8742,1/12/2018,7:47:11 PM,"376, Jalan Bertingkat Skudai, Johor Bahru, Johor",1.4622604,103.7319822,81.49,Ignition on; Moving; ,GOOD,1.11,27.2,1
+BJA8742,1/12/2018,7:48:13 PM,"52, Johor Bahru, Johor",1.4807643,103.7232295,87.04,Ignition on; Moving; ,GOOD,1.42,26.94,1
+BJA8742,1/12/2018,7:49:13 PM,"107, Jalan Tun Dr Ismail, Taman Istana, Johor Bahru, Johor",1.455,103.756364,81.49,Ignition on; Moving; ,GOOD,1.39,27.33,1
+BJA8742,1/12/2018,7:50:13 PM,"60, Jalan Ibrahim, Bandar Johor Bahru, Johor Bahru, Johor",1.4560302,103.7632051,11.11,Ignition on; Moving; ,GOOD,0.8,27.2,1
+BJA8742,1/12/2018,7:51:12 PM,"jalan segget, Johor Bahru, Johor",1.4583455,103.7647484,33.34,Ignition on; Moving; ,GOOD,0.36,27.07,1
+BJA8742,1/12/2018,7:52:14 PM,"Jalan Singapore - Sultan Iskandar Ciq Jb, Tanjung Puteri, Johor Bahru, Johor",1.4589613,103.7674401,3.7,Ignition on; Idling; ,GOOD,0.31,27.2,1
+BJA8742,1/12/2018,7:53:14 PM,"JB Sentral, Jalan Tun Abdul Razak, Bandar Johor Bahru, Johor Bahru, Johor",1.462983,103.7646849,20.37,Ignition on; Moving; ,GOOD,0.42,26.94,1
+BJA8742,1/12/2018,7:54:14 PM,"JB Sentral, Jalan Tun Abdul Razak, Bandar Johor Bahru, Johor Bahru, Johor",1.462983,103.7646849,0,Ignition on; Idling; ,GOOD,0.04,27.2,0
+BJA8742,1/12/2018,7:55:13 PM,"JB Sentral, Jalan Tun Abdul Razak, Bandar Johor Bahru, Johor Bahru, Johor",1.462983,103.7646849,0,Ignition on; Idling; ,GOOD,0,26.94,0
+BJA8742,1/12/2018,7:56:15 PM,"JB Sentral, Jalan Tun Abdul Razak, Bandar Johor Bahru, Johor Bahru, Johor",1.462983,103.7646849,0,Ignition on; Idling; ,GOOD,0,26.81,0
+BJA8742,1/12/2018,7:57:15 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0.02,27.2,0
+BJA8742,1/12/2018,7:58:15 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0,26.81,0
+BJA8742,1/12/2018,8:00:00 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0,27.2,0
+BJA8742,1/12/2018,8:02:00 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0,27.2,0
+BJA8742,1/12/2018,8:03:00 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0,27.07,0
+BJA8742,1/12/2018,8:05:01 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0.01,26.81,0
+BJA8742,1/12/2018,8:07:01 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0.02,26.94,0
+BJA8742,1/12/2018,8:08:01 PM,"Unnamed Road, Bukit Chagar, Johor Bahru, Johor",1.4633725,103.7647027,0,Ignition on; Idling; ,GOOD,0.02,26.94,0
+BJA8742,1/12/2018,8:09:02 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0,26.81,0
+BJA8742,1/12/2018,8:10:02 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0.01,26.81,0
+BJA8742,1/12/2018,8:11:02 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,0,Ignition on; Idling; ,GOOD,0,26.94,2
+BJA8742,1/12/2018,8:12:02 PM,"1, Jalan Jim Quee, Bukit Chagar, Johor Bahru, Johor",1.464655,103.7641602,29.63,Ignition on; Moving; ,GOOD,0.17,27.33,2
+BJA8742,1/12/2018,8:13:03 PM,"JB Sentral, Jalan Tun Abdul Razak, Bukit Chagar, Johor Bahru, Johor",1.4632808,103.7647113,40.74,Ignition on; Moving; ,GOOD,0.19,26.94,2
+BJA8742,1/12/2018,8:14:03 PM,"Jalan Tun Abdul Razak, Johor Bahru, Johor",1.4786005,103.7526464,40.74,Ignition on; Moving; ,GOOD,0.59,26.81,2
+BJA8742,1/12/2018,8:15:03 PM,"Bus Stop Jalan Ibrahim, Jalan Ibrahim, Bandar Johor Bahru, Johor Bahru, Johor",1.4555143,103.7618528,55.56,Ignition on; Moving; ,GOOD,0.66,27.33,2
+BJA8742,1/12/2018,8:16:03 PM,"103, Jalan Tun Dr Ismail, Johor Bahru, Johor",1.4550019,103.7529115,53.71,Ignition on; Moving; ,GOOD,0.89,27.33,2
+BJA8742,1/12/2018,8:17:04 PM,"Jalan Skudai, berhampiran Hospital Sultanah Aminah, Johor",1.4568422,103.7477965,20.37,Ignition on; Moving; ,GOOD,0.71,27.07,2
+BJA8742,1/12/2018,8:18:04 PM,"52, Johor Bahru, Johor",1.4807643,103.7232295,79.64,Ignition on; Moving; ,GOOD,1.03,27.07,2
+BJA8742,1/12/2018,8:19:04 PM,"52, Johor Bahru, Johor",1.4807643,103.7232295,24.08,Ignition on; Moving; ,GOOD,1.01,27.2,2
+BJA8742,1/12/2018,8:20:04 PM,"Lot CH-01, Jalan Skudai, Country Garden Danga Bay,, Johor Bahru, Johor, Malaysia, Johor Bahru",1.4652211,103.7265967,0,Ignition on; Idling; ,GOOD,0.63,26.94,2
+BJA8742,1/12/2018,8:21:05 PM,"29C, Jalan Bertingkat Skudai, Straits View, Johor Bahru, Johor",1.4726925,103.7256359,68.52,Ignition on; Moving; ,GOOD,0.62,26.94,2
+BJA8742,1/12/2018,8:22:05 PM,"#6-G-09 Danga Walk Shop Office, Danga Bay, Off Jln Skudai, Johor Bahru, Johor",1.481358,103.722513,59.26,Ignition on; Moving; ,GOOD,1.04,27.07,2
+BJA8742,1/12/2018,8:23:05 PM,"No. 30, Jalan Padi Ria 13, Bandar Baru Uda, Johor, Tampoi, Johor Bahru",1.4992757,103.7183162,42.6,Ignition on; Moving; ,GOOD,0.91,27.2,2
+BJA8742,1/12/2018,8:24:05 PM,"1138, Jalan Bertingkat Skudai, Bandar Baru Uda, Johor Bahru, Johor",1.4888144,103.7132619,24.08,Ignition on; Moving; ,GOOD,0.47,26.94,2
+BJA8742,1/12/2018,8:25:06 PM,"No. 5944, Jalan Skudai, Johor, Johor Bharu",1.5468536,103.6571872,53.71,Ignition on; Moving; ,GOOD,0.41,27.07,2
+BJA8742,1/12/2018,8:26:06 PM,"6, Jalan Mata Kucing, Kampung Pasir, Johor Bahru, Johor",1.4958939,103.701959,50,Ignition on; Moving; ,GOOD,0.98,27.07,2
+BJA8742,1/12/2018,8:27:06 PM,"Shell, Jalan Skudai, Tampoi,, Johor Bahru, Johor Darul Takzim",1.5109362,103.6870985,37.04,Ignition on; Moving; ,GOOD,0.27,26.94,2
+BJA8742,1/12/2018,8:28:06 PM,"13-C, Jalan Skudai, Batu 5, Tampoi, Johor Bahru,, Johor Bahru, Johor,",1.5106263,103.7259853,0,Ignition on; Idling; ,GOOD,0.78,27.07,2
+BJA8742,1/12/2018,8:29:07 PM,"6 MS, Jalan Skudai, Johor, Johor Bahru",1.5051789,103.6918401,53.71,Ignition on; Moving; ,GOOD,0.36,27.33,2
+BJA8742,1/12/2018,8:30:07 PM,"Jalan Skudai, Taman Dato Penggawa Barat, Taman Tampoi Indah, Skudai, Johor",1.5080401,103.6893318,7.41,Ignition on; Moving; ,GOOD,0.69,26.81,2
+BJA8742,1/12/2018,8:31:07 PM,"Jalan Skudai, Taman Dato Penggawa Barat, Taman Tampoi Indah, Skudai, Johor",1.5080401,103.6893318,0,Ignition on; Idling; ,GOOD,0,27.2,2
+BJA8742,1/12/2018,8:32:07 PM,"Bangunan Timjaya, No. 127, Jalan Skudai, Batu 4 1/2, Johor, Johor Bahru",1.4883302,103.7128952,48.15,Ignition on; Moving; ,GOOD,0.45,27.33,2
+BJA8742,1/12/2018,8:33:08 PM,"1, Johor Bahru, Johor",1.4888791,103.7407584,0,Ignition on; Idling; ,GOOD,0.61,26.68,2
+BJA8742,1/12/2018,8:34:08 PM,"46, Jalan Pertama 1, Taman Tampoi Indah 2, Skudai, Johor",1.5198135,103.680717,42.6,Ignition on; Moving; ,GOOD,0.52,26.94,2
+BJA8742,1/12/2018,8:35:08 PM,"81200, Jalan Roda Utama, Johor Bahru, Johor",1.5230131,103.6788701,38.89,Ignition on; Moving; ,GOOD,0.5,26.94,2
+BJA8742,1/12/2018,8:36:08 PM,"jalan skudai, Skudai, Johor",1.5103164,103.68819,31.48,Ignition on; Moving; ,GOOD,1,26.94,2
+BJA8742,1/12/2018,8:37:09 PM,"No 6, Jalan Ekoperniagaan 1/7, Taman Ekoperniagaan, Johor Bahru, Johor",1.5788648,103.722667,20.37,Ignition on; Moving; ,GOOD,0.12,26.94,2
+BJA8742,1/12/2018,8:38:09 PM,"Lot 04-27, Fourth Floor, Skudai Parade Shopping Complex, Jalan Skudai, Batu 10, Skudai,, Johor Bahru, Johor",1.5343463,103.6655109,53.71,Ignition on; Moving; ,GOOD,0.85,26.94,2
+BJA8742,1/12/2018,8:39:09 PM,"Pejabat Pos Skudai, Peti Surat 48, Skudai,, Johor Bahru, Johor",1.538276,103.661669,53.71,Ignition on; Moving; ,GOOD,0.57,27.33,2
+BJA8742,1/12/2018,8:40:09 PM,"No. 33, Jalan Besi 1, Skudai, Johor, Johor Bahru",1.5437354,103.6574188,38.89,Ignition on; Moving; ,GOOD,0.75,27.2,2
+BJA8742,1/12/2018,8:41:10 PM,"22, Jalan Emas Putih 1, Taman Sri Skudai, Skudai, Johor",1.5470139,103.656635,55.56,Ignition on; Moving; ,GOOD,0.42,27.33,2
+BJA8742,1/12/2018,8:42:10 PM,"1, Skudai, Skudai, Johor",1.5373801,103.6627222,77.78,Ignition on; Moving; ,GOOD,1.23,26.81,2
+BJA8742,1/12/2018,8:43:10 PM,"1, Senai, Johor",1.6017462,103.6450745,75.93,Ignition on; Moving; ,GOOD,1.31,27.07,2
+BJA8742,1/12/2018,8:44:10 PM,"1, Senai, Johor",1.6017462,103.6450745,62.97,Ignition on; Moving; ,GOOD,1.27,26.43,2
+BJA8742,1/12/2018,8:45:11 PM,"1, Senai, Johor",1.6017462,103.6450745,59.26,Ignition on; Moving; ,GOOD,0.66,27.07,2
+BJA8742,1/12/2018,8:46:11 PM,"Jalan Impiana Senai Utama 2, Taman Impian Senai, Senai, Johor",1.592838,103.647417,64.82,Ignition on; Moving; ,GOOD,1.15,26.94,2
+BJA8742,1/12/2018,8:47:11 PM,"213, Jalan Ria, Taman Bahagia, Senai, Johor",1.5969939,103.6458948,25.93,Ignition on; Moving; ,GOOD,0.5,26.81,2
+BJA8742,1/12/2018,8:48:11 PM,"15A, 1, Kampung Baru Senai, Senai, Johor",1.6020156,103.6451943,0,Ignition on; Idling; ,GOOD,0.38,27.07,2
+BJA8742,1/12/2018,8:49:12 PM,"No.53, Main Road, Taman Senai Utama, Senai, Johor",1.6038678,103.6466694,50,Ignition on; Moving; ,GOOD,0.45,27.33,2
+BJA8742,1/12/2018,8:50:12 PM,"1762, Jalan Senai Utama 1/2, Taman Senai Utama, Senai,, Senai, Johor,",1.6102759,103.6471845,50,Ignition on; Moving; ,GOOD,0.58,27.46,2
+BJA8742,1/12/2018,8:51:12 PM,"141, Wisma SHS, Jalan Senai Utama 5/17, Taman Senai Utama, Senai,, Senai, Johor,",1.61377,103.647,33.34,Ignition on; Moving; ,GOOD,0.53,26.94,2
+BJA8742,1/12/2018,8:52:12 PM,"1, Senai, Johor",1.6017462,103.6450745,62.97,Ignition on; Moving; ,GOOD,0.86,27.33,2
+BJA8742,1/12/2018,8:53:13 PM,"1, Taman Selang Jaya, Senai, Johor",1.6283962,103.6381881,53.71,Ignition on; Moving; ,GOOD,1.17,26.94,2
+BJA8742,1/12/2018,8:54:13 PM,"No. 3662, Jalan Saleng, Batu 16 1/2,, Senai, Johor, Senai",1.6316128,103.6342224,35.19,Ignition on; Moving; ,GOOD,0.54,26.94,2
+BJA8742,1/12/2018,8:55:13 PM,"1, Kulai, Johor",1.6627898,103.5996619,22.22,Ignition on; Moving; ,GOOD,0.31,27.2,2
+BJA8742,1/12/2018,8:56:13 PM,"81000, 1, Taman Pancasila, Kulai, Johor",1.6349582,103.6307453,29.63,Ignition on; Moving; ,GOOD,0.15,26.94,2
+BJA8742,1/12/2018,8:57:14 PM,"1155, Jalan Kasturi 36/41, Asiatic Indahpura Car City, Kulai, Johor",1.6375735,103.6265978,33.34,Ignition on; Moving; ,GOOD,0.56,27.2,2
+BJA8742,1/12/2018,8:58:14 PM,"Lot 1151, Jalan Kasturi 36/41, Indahpura Car City,, Kulai, Johor,",1.6377019,103.6266908,9.26,Ignition on; Moving; ,GOOD,0.14,26.94,2
+BJA8742,1/12/2018,8:59:14 PM,"Jalan Kulai - Senai, Hospital Kulaijaya, Kulai, Johor",1.6393859,103.6247424,29.63,Ignition on; Moving; ,GOOD,0.17,26.94,2
+BJA8742,1/12/2018,9:00:00 PM,"88, Jalan Kenanga 29/7, Bandar Indahpura, Kulai, Johor",1.6437035,103.6187862,83.34,Ignition on; Moving; ,GOOD,0.82,27.33,2
+BJA8742,1/12/2018,9:01:00 PM,"No. 367, Jalan Susur Kulai 1,, Kulai, Johor,",1.64751,103.614021,22.22,Ignition on; Moving; ,GOOD,0.69,27.07,2
+BJA8742,1/12/2018,9:02:00 PM,"81000 31-14 &amp; 31-15 Jalan Susur Kulai 1 Kulai Besar Kulai Johor,",1.6505314,103.611871,22.22,Ignition on; Moving; ,GOOD,0.52,27.2,2
+BJA8742,1/12/2018,9:03:00 PM,"132, Jalan Susur Kulai 2, Taman Kulai Besar, Kulai, Johor",1.6519982,103.6099841,29.63,Ignition on; Moving; ,GOOD,0.17,26.94,2
+BJA8742,1/12/2018,9:04:01 PM,"Jalan Besar, Taman Kulai Besar, Kulai, Johor",1.656918,103.6085261,42.6,Ignition on; Moving; ,GOOD,0.64,26.94,2
+BJA8742,1/12/2018,9:05:01 PM,"20, Jalan Besar, Taman Mewah, Kulai, Johor",1.66173,103.6027,24.08,Ignition on; Moving; ,GOOD,0.57,27.33,2
+BJA8742,1/12/2018,9:06:01 PM,"65, Jalan Besar, Taman Kulai, Kulai, Johor",1.6623796,103.6009656,35.19,Ignition on; Moving; ,GOOD,0.37,27.07,2
+BJA8742,1/12/2018,9:07:01 PM,"Terminal Bas Kulai, Taman Kulai, Kulai, Johor",1.6626225,103.5988947,0,Ignition on; Idling; ,GOOD,0.23,26.81,2
+BJA8742,1/12/2018,9:08:02 PM,"Terminal Bas Kulai, Taman Kulai, Kulai, Johor",1.6626225,103.5988947,0,Ignition on; Idling; ,GOOD,0.02,27.2,0
+BJA8742,1/12/2018,9:09:02 PM,"1.05, Jalan Anggerik 8, Taman Kulai Utama, Kulai, Johor",1.663492,103.597135,44.45,Ignition on; Moving; ,GOOD,0.37,26.94,0
+BJA8742,1/12/2018,9:10:02 PM,"Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6648049,103.5953455,0,Ignition on; Idling; ,GOOD,0.12,27.07,0
+BJA8742,1/12/2018,9:11:02 PM,"Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6648049,103.5953455,0,Ignition on; Idling; ,GOOD,0,27.2,0
+BJA8742,1/12/2018,9:12:02 PM,"Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6648049,103.5953455,0,Ignition on; Idling; ,GOOD,0,26.81,0
+BJA8742,1/12/2018,9:13:03 PM,"Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6648049,103.5953455,0,Ignition on; Idling; ,GOOD,0,27.07,0
+BJA8742,1/12/2018,9:14:03 PM,"Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6648049,103.5953455,0,Ignition on; Idling; ,GOOD,0,26.55,0
+BJA8742,1/12/2018,9:15:03 PM,"Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6648049,103.5953455,0,Ignition on; Idling; ,GOOD,0,26.94,0
+BJA8742,1/12/2018,9:16:03 PM,"Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6648049,103.5953455,0,Ignition on; Idling; ,GOOD,0,26.94,0
+BJA8742,1/12/2018,9:17:04 PM,"67, Jalan Susur Kulai 5, Taman Nam Tak, Kulai, Johor",1.6667838,103.591831,35.19,Ignition on; Moving; ,GOOD,0.38,27.07,0
+BJA8742,1/12/2018,9:18:04 PM,"q23, Jalan Air Hitam, Batu 21, Kulai, Johor",1.667288,103.5877209,22.22,Ignition on; Moving; ,GOOD,0.46,27.2,0
+BJA8742,1/12/2018,9:19:04 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,7.41,Ignition on; Moving; ,GOOD,0.19,27.2,0
+BJA8742,1/12/2018,9:20:04 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,26.68,0
+BJA8742,1/12/2018,9:21:05 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,27.59,0
+BJA8742,1/12/2018,9:22:05 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,25.91,0
+BJA8742,1/12/2018,9:22:08 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.78,0
+BJA8742,1/12/2018,9:25:05 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,23.98,0
+BJA8742,1/12/2018,9:28:06 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,23.98,0
+BJA8742,1/12/2018,9:28:10 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,23.98,0
+BJA8742,1/12/2018,9:28:13 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,23.85,0
+BJA8742,1/12/2018,9:28:35 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,23.98,0
+BJA8742,1/12/2018,9:29:06 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,9.26,Ignition on; Moving; ,GOOD,0,27.33,0
+BJA8742,1/12/2018,9:30:06 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0.01,27.59,0
+BJA8742,1/12/2018,9:31:07 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,27.59,0
+BJA8742,1/12/2018,9:31:13 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,26.55,0
+BJA8742,1/12/2018,9:34:07 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.65,0
+BJA8742,1/12/2018,9:37:08 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.52,0
+BJA8742,1/12/2018,9:37:35 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.39,0
+BJA8742,1/12/2018,9:37:37 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.39,0
+BJA8742,1/12/2018,9:40:49 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.39,0
+BJA8742,1/12/2018,9:43:49 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.27,0
+BJA8742,1/12/2018,9:46:49 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.14,0
+BJA8742,1/12/2018,9:49:49 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.27,0
+BJA8742,1/12/2018,9:52:49 PM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,25.14,0
+BJA8742,2/12/2018,7:53:04 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0.01,24.75,0
+BJA8742,2/12/2018,7:56:04 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,24.75,0
+BJA8742,2/12/2018,7:59:04 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,24.75,0
+BJA8742,2/12/2018,8:00:00 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,24.75,0
+BJA8742,2/12/2018,8:03:00 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,24.75,0
+BJA8742,2/12/2018,8:06:00 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; ,GOOD,0,24.75,0
+BJA8742,2/12/2018,8:55:02 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition off; Main Power Off; ,GOOD,0,0.9,0
+BJA8742,2/12/2018,8:55:04 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,24.36,0
+BJA8742,2/12/2018,8:55:04 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,24.36,0
+BJA8742,2/12/2018,8:56:04 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,27.07,0
+BJA8742,2/12/2018,8:57:04 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,27.33,0
+BJA8742,2/12/2018,8:58:04 AM,"263, Jalan Serunai 1, Taman Sri Kulai Baru 2, Kulai, Johor",1.6656911,103.5863948,0,Ignition on; Idling; ,GOOD,0,26.94,0
+BJA8742,2/12/2018,8:59:04 AM,"Lot 15570, Jalan Air Hitam, Batu 24, Johor, Kulai",1.666349,103.587464,11.11,Ignition on; Moving; ,GOOD,0.01,26.94,0
+BJA8742,2/12/2018,9:00:00 AM,"Lot 15570, Jalan Air Hitam, Batu 24, Johor, Kulai",1.666349,103.587464,0,Ignition on; Idling; ,GOOD,0.03,27.33,0
+BJA8742,2/12/2018,9:01:00 AM,"Lot 7318 Jalan Air Hitam Batu 21,, Kulai, Johor,",1.6674044,103.5892073,7.41,Ignition on; Moving; ,GOOD,0.18,27.33,0
+BJA8742,2/12/2018,9:03:00 AM,"197, Jalan Pinang 3, Taman Kota Kulai, Kulai, Johor",1.6686759,103.5832381,33.34,Ignition on; Moving; ,GOOD,0.57,27.2,0
+BJA8742,2/12/2018,9:04:00 AM,"36a, Jalan Pinang, Taman Kota Kulai, Kulai, Johor",1.6685537,103.5806059,40.74,Ignition on; Moving; ,GOOD,0.22,27.59,0
+BJA8742,2/12/2018,9:05:00 AM,"185, Jalan Sri Putri 1/2, Taman Putri Kulai, Kulai, Johor",1.6665756,103.5764967,40.74,Ignition on; Moving; ,GOOD,0.6,27.59,0
+BJA8742,2/12/2018,9:06:00 AM,"Jalan Alor Bukit, Kulai, Johor",1.6577518,103.5689928,50,Ignition on; Moving; ,GOOD,0.83,27.2,0
+BJA8742,2/12/2018,9:07:00 AM,"No. 1747, Jalan Sri Putri 4, Taman Sri Putri, Johor, Kulai",1.6552439,103.5741938,35.19,Ignition on; Moving; ,GOOD,0.53,27.2,0
+BJA8742,2/12/2018,9:09:00 AM,"No 1626,1627,jalan sri putri 4/2, Taman Putri Kulai, Kulai, Johor",1.6541569,103.5735155,27.78,Ignition on; Moving; ,GOOD,0.27,27.2,0
+BJA8742,2/12/2018,9:10:00 AM,"1657, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.6555767,103.5720827,0,Ignition on; Idling; ,GOOD,0.17,27.07,0
+BJA8742,2/12/2018,9:12:01 AM,"1657, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.6555767,103.5720827,0,Ignition on; Idling; ,GOOD,0,27.07,0
+BJA8742,2/12/2018,9:14:01 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0.03,27.07,0
+BJA8742,2/12/2018,9:17:01 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,27.2,0
+BJA8742,2/12/2018,9:18:01 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,27.07,0
+BJA8742,2/12/2018,9:19:01 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,27.33,0
+BJA8742,2/12/2018,9:20:01 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,27.07,0
+BJA8742,2/12/2018,9:21:01 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,26.94,0
+BJA8742,2/12/2018,9:22:02 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,26.94,0
+BJA8742,2/12/2018,9:23:02 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,27.2,0
+BJA8742,2/12/2018,9:24:02 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,26.94,0
+BJA8742,2/12/2018,9:25:02 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,27.33,0
+BJA8742,2/12/2018,9:26:02 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0,27.2,0
+BJA8742,2/12/2018,9:27:02 AM,"1658, Jalan Sri Putri 4/2, Taman Putri Kulai, Kulai, Johor",1.655616,103.5721741,0,Ignition on; Idling; ,GOOD,0.02,27.33,0
+BJA8742,2/12/2018,9:28:02 AM,"1756-A, Jalan Sri Putri 4, Taman Putri Kulai,, Kulai, Johor,",1.6552029,103.5743019,35.19,Ignition on; Moving; ,GOOD,0.23,27.33,0
+BJA8742,2/12/2018,9:29:02 AM,"1761, Persiaran Sri Putri, Taman Putri Kulai, Kulai, Johor",1.6530667,103.5764165,25.93,Ignition on; Moving; ,GOOD,0.42,27.07,0
+BJA8742,2/12/2018,9:30:02 AM,"7017, Jalan Sri Putri 14/1, Taman Putri Kulai, Kulai, Johor",1.6513979,103.5783743,0,Ignition on; Idling; ,GOOD,0.22,27.2,0
+BJA8742,2/12/2018,9:31:02 AM,"No. 7004, Jalan Sri Putri 14/1, Jasmine Park, Taman Putri Kulai,, Kulaijaya, Johor, Kulaijaya",1.650985,103.579448,33.34,Ignition on; Moving; ,GOOD,0.23,27.07,0
+BJA8742,2/12/2018,9:32:02 AM,"No. 4859-01, Jln Sri Putri 5/9, Taman Putri Kulai, Kulai, Johor",1.653666,103.581891,0,Ignition on; Idling; ,GOOD,0.39,27.07,0
+BJA8742,2/12/2018,9:33:02 AM,"4078, Jalan Sri Putri 7, Taman Putri Kulai, Kulai, Johor",1.6569147,103.5818952,37.04,Ignition on; Moving; ,GOOD,0.37,26.94,0
+BJA8742,2/12/2018,9:34:03 AM,"Persiaran Sri Putri 3, Taman Putri Kulai, Kulai, Johor",1.6585285,103.5782471,40.74,Ignition on; Moving; ,GOOD,0.72,27.33,0
+BJA8742,2/12/2018,9:36:03 AM,"397, Jalan Saga 4, Taman Saga, Kulai, Johor",1.6657736,103.5781782,37.04,Ignition on; Moving; ,GOOD,0.7,27.07,0
+BJA8742,2/12/2018,9:37:03 AM,"253, Jalan Nibong 3, Taman Kota Kulai, Kulai, Johor",1.6672269,103.5768103,0,Ignition on; Idling; ,GOOD,0.25,26.94,0
+BJA8742,2/12/2018,9:38:03 AM,"Htl Furniture (M) Sdn Bhd, Taman Wawasan, Kulai, Johor",1.6692665,103.578582,27.78,Ignition on; Moving; ,GOOD,0.16,27.2,0
+BJA8742,2/12/2018,9:39:03 AM,"2, Jalan Pelanduk, Taman Pertama, Kulai, Johor",1.6693069,103.585454,51.86,Ignition on; Moving; ,GOOD,0.78,27.46,0
+BJA8742,2/12/2018,9:40:03 AM,"No 725 & 727, Jalan Susur, Taman Teok Kulai Besar, Johor, Kulai",1.6447815,103.617785,37.04,Ignition on; Moving; ,GOOD,0.71,27.33,0
+BJA8742,2/12/2018,9:41:03 AM,"1.05, Jalan Anggerik 8, Taman Kulai Utama, Kulai, Johor",1.663492,103.597135,0,Ignition on; Idling; ,GOOD,0.62,26.81,0
+BJA8742,2/12/2018,9:42:03 AM,"JKR 847, Jalan Raya,, Kulai, Johor",1.6626391,103.6002344,29.63,Ignition on; Moving; ,GOOD,0.5,27.07,1
+BJA8742,2/12/2018,9:43:03 AM,"26, Jalan Besar, Taman Kulai, Kulai, Johor",1.661475,103.6027497,12.96,Ignition on; Moving; ,GOOD,0.35,27.46,1
+BJA8742,2/12/2018,9:44:03 AM,"20, Jalan Besar, Taman Mewah, Kulai, Johor",1.66173,103.6027,16.67,Ignition on; Moving; ,GOOD,0.12,27.46,1
+BJA8742,2/12/2018,9:45:03 AM,"No.139, Jalan Susur Kulai 3, Taman Kulai Besar, Kulai, Johor",1.6600167,103.6052887,0,Ignition on; Idling; ,GOOD,0.17,27.2,1
+BJA8742,2/12/2018,9:46:04 AM,"No.139, Jalan Susur Kulai 3, Taman Kulai Besar, Kulai, Johor",1.6600167,103.6052887,0,Ignition on; Idling; ,GOOD,0,27.07,1
+BJA8742,2/12/2018,9:47:04 AM,"193 & 195, Batu 19, Kulai Besar, Kulai,, Kulai, Johor,",1.655537,103.609174,50,Ignition on; Moving; ,GOOD,0.68,27.07,1
+BJA8742,2/12/2018,9:48:04 AM,"No. 10, Jalan Susur Kulai 2, Taman Kulai Kulai Besar, Kulai,, Kulai, Johor,",1.6497348,103.6118347,35.19,Ignition on; Moving; ,GOOD,0.72,27.33,1
+BJA8742,2/12/2018,9:49:04 AM,"1, Jalan Besar, Taman Kulai Utama, Kulai, Johor",1.6403745,103.6236465,31.48,Ignition on; Moving; ,GOOD,0.56,27.07,1
+BJA8742,2/12/2018,9:51:04 AM,"No. 25-1, Jalan Susur Kulai 1, Johor, Kulai",1.655182,103.609566,22.22,Ignition on; Moving; ,GOOD,0.24,27.2,1
+BJA8742,2/12/2018,9:52:04 AM,"50, Jalan Seri Putra 1, Bandar Putra, Kulai, Johor",1.642151,103.622463,38.89,Ignition on; Moving; ,GOOD,0.66,27.33,1
+BJA8742,2/12/2018,9:53:04 AM,"No. 791-1, Lebuhraya Senai, Taman Teok, Johor, Kulai",1.6396948,103.6248815,16.67,Ignition on; Moving; ,GOOD,0.41,27.59,1
+BJA8742,2/12/2018,9:54:04 AM,"1157, Jalan Kasturi 36/41, Asiatic Indahpura Car City, Kulai, Johor",1.6369842,103.6271396,25.93,Ignition on; Moving; ,GOOD,0.45,27.33,1
+BJA8742,2/12/2018,9:55:04 AM,"81000, 1, Taman Pancasila, Kulai, Johor",1.6349582,103.6307453,25.93,Ignition on; Moving; ,GOOD,0.42,27.46,1
+BJA8742,2/12/2018,9:56:04 AM,"1, Kulai, Johor",1.6627898,103.5996619,14.82,Ignition on; Moving; ,GOOD,0.16,27.33,1
+BJA8742,2/12/2018,9:57:05 AM,"1, Kulai, Johor",1.6627898,103.5996619,14.82,Ignition on; Moving; ,GOOD,0.27,27.33,1
+BJA8742,2/12/2018,9:58:05 AM,"132-G,jalan selangat 2,taman saleng jaya, Lebuhraya Senai, Taman Selang Jaya, Senai, Johor",1.6292827,103.6365853,46.3,Ignition on; Moving; ,GOOD,0.43,27.46,1
+BJA8742,2/12/2018,9:59:05 AM,"1, Senai, Johor",1.6017462,103.6450745,42.6,Ignition on; Moving; ,GOOD,0.75,27.46,1
+BJA8742,2/12/2018,10:00:00 AM,"1, Senai, Johor",1.6017462,103.6450745,40.74,Ignition on; Moving; ,GOOD,0.66,27.07,1
+BJA8742,2/12/2018,10:01:00 AM,"No. 131-B, Jalan Senai Utama 5/17, Taman Senai Utama, Johor, Senai",1.612852,103.647032,46.3,Ignition on; Moving; ,GOOD,0.72,27.33,1
+BJA8742,2/12/2018,10:03:00 AM,"No 41 Jalan Raya, Senai, Senai Johor, Johor",1.6044374,103.6470801,44.45,Ignition on; Moving; ,GOOD,1.16,27.33,1
+BJA8742,2/12/2018,10:04:00 AM,"3-1, Jalan Belimbing 1, Taman Bahagia, Senai, Johor",1.600156,103.6451929,16.67,Ignition on; Moving; ,GOOD,0.5,27.33,1
+BJA8742,2/12/2018,10:05:00 AM,"No 176-B, Jalan Belimbing 1, Johor, Senai",1.6000037,103.6449616,0,Ignition on; Idling; ,GOOD,0.01,26.68,1
+BJA8742,2/12/2018,10:06:00 AM,"No 176-B, Jalan Belimbing 1, Johor, Senai",1.6000037,103.6449616,0,Ignition on; Idling; ,GOOD,0,27.2,1
+BJA8742,2/12/2018,10:08:00 AM,"1, Senai, Johor",1.6017462,103.6450745,50,Ignition on; Moving; ,GOOD,1.08,27.07,1
+BJA8742,2/12/2018,10:10:00 AM,"1, Senai, Johor",1.6017462,103.6450745,75.93,Ignition on; Moving; ,GOOD,1.96,27.2,1
+BJA8742,2/12/2018,10:11:00 AM,"1, Senai, Johor",1.6017462,103.6450745,64.82,Ignition on; Moving; ,GOOD,1.19,27.46,1
+BJA8742,2/12/2018,10:12:01 AM,"1, Skudai, Skudai, Johor",1.5373801,103.6627222,96.3,Ignition on; Moving; ,GOOD,1.53,27.46,1
+BJA8742,2/12/2018,10:13:01 AM,"81300, Jalan Bertingkat Skudai, Taman Sri Putri, Johor Bahru, Johor",1.5292255,103.6692034,0,Ignition on; Idling; ,GOOD,0.89,27.07,1
+BJA8742,2/12/2018,10:14:01 AM,"8, Jalan Jaya 1, Taman Jaya, Skudai, Johor",1.5437129,103.6585627,33.34,Ignition on; Moving; ,GOOD,0.11,27.07,1
+BJA8742,2/12/2018,10:15:01 AM,"01-51 01-52 01-53, Jalan Skudai Batu 10, Skudai, Skudai, Johor",1.5415726,103.6599695,33.34,Ignition on; Moving; ,GOOD,0.41,27.33,1
+BJA8742,2/12/2018,10:16:01 AM,"81300 No.6A,1st Floor,Jln Ronggeng Satu TMN Skudai Baru, Skudai Johor,",1.53208,103.667,88.9,Ignition on; Moving; ,GOOD,1.21,27.2,1
+BJA8742,2/12/2018,10:17:01 AM,"1, Skudai, Skudai, Johor",1.5373801,103.6627222,0,Ignition on; Idling; ,GOOD,0.62,27.07,1
+BJA8742,2/12/2018,10:18:01 AM,"No 47, Jalan NJM 1/1, Taman Jaya Mas, Skudai,, Johor Bahru, Johor,",1.4988003,103.6486626,51.86,Ignition on; Moving; ,GOOD,0.6,27.2,1
+BJA8742,2/12/2018,10:19:01 AM,"2012, Jalan Skudai Lama, Taman Tampoi Indah 2, Johor Bahru, Johor",1.5184733,103.6811862,53.71,Ignition on; Moving; ,GOOD,0.83,26.94,1
+BJA8742,2/12/2018,10:22:01 AM,"Jalan Skudai, Taman Dato Penggawa Barat, Taman Johor, Johor Bahru, Johor",1.5088287,103.6892902,0,Ignition on; Idling; ,GOOD,0.89,27.2,1
