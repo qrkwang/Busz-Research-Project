@@ -20,6 +20,7 @@ Interacting with Map, setting of markers and displaying.
 <ins>General Flow</ins>
 
 When app is started, at the Homescreen:
+
 1) App will start scanning for beacons and identify the closest few beacons for user to select. 
 (Identify your own bus instance)
 2) If more than 1 beacon detected, show the detected few. 
@@ -28,5 +29,6 @@ When app is started, at the Homescreen:
 3) Once user clicks on bus button or submit using selection picker, app will navigate to second screen.
 
 On the second screen: 
+
 4) Bus instance information will be displayed on the UI (Route, Bus Number, Bus Plate
 5) App will repeatedly retrieve all bus locations from DB.  
