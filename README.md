@@ -1,3 +1,6 @@
+<strong>App Made with React Native</strong>
+
+
 <ins>App Description</ins>
 
 Bus drivers are travelling either route 1 or 2. 
@@ -10,11 +13,17 @@ They would use the app:
 <ins>Features Summary</ins>
 
 Bluetooth Scanning
+
 Permissions API to request for bluetooth and location
+
 Geolocation library to always retrieve current location
+
 Fetching and sending using server API to communicate with DB
+
 Dynamically fill and update React Native UI
+
 Repeatedly call function using setInterval
+
 Interacting with Map, setting of markers and displaying.
 
 <ins>General Flow</ins>
