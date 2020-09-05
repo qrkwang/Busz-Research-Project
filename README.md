@@ -1,29 +1,29 @@
-<<<<<<< HEAD
-#MyBusz Project
+<ins>App Description</ins>
+Bus drivers are travelling either route 1 or 2. 
+They would use the app:
+1) To gauge how far is the bus ahead
+2) Interact with map for information — Other buses, Bus Stops along the same route
+3) App would repeatedly insert location in the backend while bus is moving 
+    for other bus drivers to view.
 
-Our Project Timeline – Timeline.xlsx 
+<ins>Features Summary</ins>
+Bluetooth Scanning
+Permissions API to request for bluetooth and location
+Geolocation library to always retrieve current location
+Fetching and sending using server API to communicate with DB
+Dynamically fill and update React Native UI
+Repeatedly call function using setInterval
+Interacting with Map, setting of markers and displaying.
 
-Summarized Tasks on hand:
+<ins>General Flow</ins>
+When app is started, at the Homescreen:
+1) App will start scanning for beacons and identify the closest few beacons for user to select. 
+(Identify your own bus instance)
+2) If more than 1 beacon detected, show the detected few. 
+    If none detected, show all bus instances for user to select 
+     If only 1 detected, show only the one.
+3) Once user clicks on bus button or submit using selection picker, app will navigate to second screen.
 
-1)Learn React & Make UI Frame
-
-2)Learn Flask + do up UI in flask + Apply Google for data cleanup completion
-
-3)Connect DB, App backend functions,  fetch data
-
-4)Connect DB, Web backend functions,  fetch data
-
-
-Future:
-
-1)Testing & Review
-
-2)Changes 
-
-3)Final Review and Changes
-
-4)Future Implementations
-
-=======
-# busz
->>>>>>> 30777e2... Initial commit
+On the second screen: 
+4) Bus instance information will be displayed on the UI (Route, Bus Number, Bus Plate
+5) App will repeatedly retrieve all bus locations from DB.  
