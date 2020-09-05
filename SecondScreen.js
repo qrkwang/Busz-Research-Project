@@ -75,7 +75,6 @@ class SecondScreen extends Component {
     var firstLocation =
       this.state.region.latitude + ',' + this.state.region.longitude;
     var secondLocation = '';
-    console.log('repeatlocation');
     setTimeout(async () => {
       secondLocation =
         this.state.region.latitude + ',' + this.state.region.longitude;
@@ -92,7 +91,6 @@ class SecondScreen extends Component {
           last_point: secondLocation,
         }),
       };
-      console.log('after const');
 
       //Determine route using first and 2nd location (after 10 secs), repeat again if route not calculated properly
       //If route is calculated properly, set the bus and markers on the map.
@@ -166,7 +164,6 @@ class SecondScreen extends Component {
       Accept: 'application/json',
       'Content-Type': 'application/json',
     };
-    //https://laravelsyd-fypfinalver.herokuapp.com/getBusLocations
     fetch('http://192.168.68.74/getBusLocations', requestOptions)
       .then((response) => response.json())
       .then((data) => {
@@ -185,9 +182,8 @@ class SecondScreen extends Component {
     var busLocArray = [];
     //Loop through all bus locations retrieved from DB
     for (const value of Object.values(this.state.busLocations)) {
-      console.log('inside loop');
-      console.log(value);
-
+      // console.log('inside loop');
+      // console.log(value);
       if (this.state.route == value.route_id) {
         console.log('route is ', this.state.route);
         if (value.bus_id == this.state.bus_id) {
@@ -413,15 +409,6 @@ class SecondScreen extends Component {
       //parameters: bus_id, route_id, imei, latlong,speed, date
       let uniqueId = DeviceInfo.getUniqueId(); //Not IMEI because Android 10+ does not allow app to retrieve IMEI anymore.
 
-      var date = moment().format('YYYY-MM-DD HH:mm:ss');
-
-      console.log('bus_id', this.state.bus_id);
-      console.log('route_id', this.state.route);
-      console.log('imei', uniqueId);
-      console.log('latlong', locationNow);
-      console.log('speed', newRegion.speed);
-      console.log('date ', date);
-
       var requestOptions = {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
@@ -441,12 +428,7 @@ class SecondScreen extends Component {
           var errorCount = this.state.insertErrorCounter;
           console.log('insert location', result);
 
-          // console.log('splitted Lines', splittedLines[0]);
-          // console.log(splittedLines[1].trim());
-          // console.log('insert success');
-          // console.log('splitted Lines', splittedLines[2]);
-          // console.log(splittedLines[1].trim() == 'insert success');
-          if (errorCount < 9) {
+          if (errorCount < 10) {
             if (result === 'Too far from route') {
               console.log('TOO FARRRR');
               errorCount = errorCount + 1;
@@ -464,21 +446,6 @@ class SecondScreen extends Component {
             //If "too far from route" for 10 times already, exit App
             BackHandler.exitApp();
           }
-
-          // if (errorCount < 9) {
-          //   if (splittedLines[1].trim() === 'insert success') {
-          //     errorCount = 0;
-          //     console.log('INSERT SUCCESSS!!!!');
-          //   } else {
-          //     console.log('TOO FARRRR');
-          //     errorCount = errorCount + 1;
-          //     this.setState({
-          //       insertErrorCounter: errorCount,
-          //     });
-          //   }
-          //   console.log('ERROR COUNT: ', errorCount);
-          // } else {
-          // }
         })
         .catch((error) => console.log('error inserting location', error));
 
@@ -488,10 +455,10 @@ class SecondScreen extends Component {
       } else if (this.state.route == 2) {
         destination = '1.662585,103.598608'; // Destination is different for each route
       }
-      2;
-      console.log('in user location changed', this.state.bus_number);
-      console.log('routeno', this.state.route);
-      console.log('destination', destination);
+
+      // console.log('in user location changed', this.state.bus_number);  For your own reference.
+      // console.log('routeno', this.state.route);
+      // console.log('destination', destination);
       requestOptions = {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},

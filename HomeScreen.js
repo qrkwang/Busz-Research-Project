@@ -5,10 +5,6 @@ import {
   View,
   Image,
   TouchableOpacity,
-  DeviceEventEmitter,
-  AppRegistry,
-  Platform,
-  NativeAppEventEmitter,
   PermissionsAndroid, // for checking if certain android permissions are enabled
   NativeEventEmitter, // for emitting events for the BLE manager
   NativeModules, // for getting an instance of the BLE manager module
@@ -22,7 +18,6 @@ import {
 import {createStackNavigator} from '@react-navigation/stack';
 import {Picker} from '@react-native-community/picker';
 import {BleManager} from 'react-native-ble-plx';
-import {getLocation} from './location-service';
 
 import {
   BluetoothStatus,
@@ -284,48 +279,6 @@ class HomeScreen extends Component {
     }, true);
   }
 
-  //get location and set route
-  getLoc() {
-    getLocation().then((data) => {
-      console.log(data);
-      // this.setState({
-      //   region: {
-      //     latitude: data.latitude,
-      //     longitude: data.longitude,
-      //     latitudeDelta: 0.003,
-      //     longitudeDelta: 0.003,
-      //   },
-      // });
-    });
-    //route 1 - departure terminal
-    //1.662585, 103.598608
-    //   route 2 - departure terminal
-    // 1.463400,103.764932
-  }
-
-  // GetFakeData = () => {
-  //   fetch('https://jsonplaceholder.typicode.com/users')
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       console.log(json);
-  //       this.setState({
-  //         userValues: json,
-  //       });
-  //     });
-  // };
-
-  // GetBeaconMacs = () => {
-  //   fetch('http://192.168.10.10/getBusInfo', {
-  //     method: 'POST',
-  //   })
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       console.log(json);
-  //       this.setState({
-  //         busValues: json,
-  //       });
-  //     });
-  // };
   GetRealData = async () => {
     fetch('http://192.168.68.74/getBusInfo', {
       method: 'POST',
