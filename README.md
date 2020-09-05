@@ -1,4 +1,5 @@
 <ins>App Description</ins>
+
 Bus drivers are travelling either route 1 or 2. 
 They would use the app:
 1) To gauge how far is the bus ahead
@@ -7,6 +8,7 @@ They would use the app:
     for other bus drivers to view.
 
 <ins>Features Summary</ins>
+
 Bluetooth Scanning
 Permissions API to request for bluetooth and location
 Geolocation library to always retrieve current location
@@ -16,6 +18,7 @@ Repeatedly call function using setInterval
 Interacting with Map, setting of markers and displaying.
 
 <ins>General Flow</ins>
+
 When app is started, at the Homescreen:
 1) App will start scanning for beacons and identify the closest few beacons for user to select. 
 (Identify your own bus instance)
