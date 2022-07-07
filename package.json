@@ -17,7 +17,7 @@
     "@react-navigation/stack": "^5.7.1",
     "deprecated-react-native-listview": "0.0.6",
     "haversine": "^1.1.1",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "react": "16.13.1",
     "react-native": "0.63.2",
     "react-native-android-location-enabler": "^1.2.1",
